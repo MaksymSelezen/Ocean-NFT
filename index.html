@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocean NFT</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500&family=Orbitron:wght@700&family=Inter:wght@400;500;800&family=Aldrich&family=Lato:wght@400;700&family=League+Spartan:wght@600&family=MuseoModerno&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <!----------- HEAEDR ---------->
+
+    <header class="header">
+      <div class="container header-inner">
+        <a href="./index.html" class="header-logo">
+          <svg class="header-logo-icon" width="13.44" height="22.47">
+            <use href="./public/icons/symbol-defs.svg#icon-ocean-nft"></use>
+          </svg>
+          <span class="header-logo-text">OceanNFT</span>
+        </a>
+
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="./index.html">Market</a></li>
+            <li class="header-nav-item"><a href="./index.html">Features</a></li>
+            <li class="header-nav-item">
+              <a href="./index.html">Community</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="./index.html" class="header-action-link">
+            <svg class="header-cart" width="22.5" height="21.56">
+              <use href="/icons/symbol-defs.svg#icon-cart"></use>
+            </svg>
+          </a>
+
+          <a href="./index.html" class="header-action-link">
+            <svg class="header-user" width="22.11" height="22.11">
+              <use href="/icons/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="header-burger" type="button">
+          <svg class="header-burger-icon" width="21.71" height="19.64">
+            <use href="./public/icons/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!---------- MAIN SECTION ------------>
+
+      <section class="main">
+        <div class="container main-inner">
+          <div class="main-content">
+            <h1 class="main-title">
+              Discover, collect, and sell
+              <span class="main-title-accent">Timeless</span> NFTs
+            </h1>
+
+            <p class="main-text">
+              The world’s first and largest digital marketplace for crypto
+              collectibles and non- fungible tokens (NFTs).
+            </p>
+
+            <div class="main-buttons">
+              <button type="button" class="main-btn">
+                Explore
+                <svg class="btn-arrow-icon" width="51.96" height="15.48">
+                  <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                </svg>
+              </button>
+
+              <a href="./index.html" class="btn btn-secondary">Create NFT’s</a>
+            </div>
+
+            <div class="main-stats">
+              <ul class="main-stats-list">
+                <li class="main-stats-item">
+                  <h2 class="main-stats-title">35m+</h2>
+                  <p class="main-stats-text">Artwork</p>
+                </li>
+                <li class="main-stats-item">
+                  <h2 class="main-stats-title">18m+</h2>
+                  <p class="main-stats-text">Auctions</p>
+                </li>
+                <li class="main-stats-item">
+                  <h2 class="main-stats-title">500k+</h2>
+                  <p class="main-stats-text">Artists</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main-icons">
+            <ul class="partners-list">
+              <li class="partners-item">
+                <svg class="partners-icon" width="143.08" height="28.02">
+                  <use href="/public/icons/symbol-defs.svg#icon-Binance"></use>
+                </svg>
+              </li>
+
+              <li class="partners-item">
+                <svg class="partners-icon" width="91.81" height="28.62">
+                  <use href="/public/icons/symbol-defs.svg#icon-Ethereum"></use>
+                </svg>
+              </li>
+
+              <li class="partners-item">
+                <svg class="partners-icon" width="188.38" height="28.62">
+                  <use
+                    href="/public/icons/symbol-defs.svg#icon-Blockchain"
+                  ></use>
+                </svg>
+              </li>
+
+              <li class="partners-item">
+                <svg class="partners-icon" width="105.91" height="16.92">
+                  <use href="/public/icons/symbol-defs.svg#icon-bitmex"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-media">
+            <picture>
+              <source
+                srcset="
+                  ./public/images/main/main-img-desk.jpg    1x,
+                  ./public/images/main/main-img-desk-2x.jpg 2x
+                "
+                media="(min-width: 1920px)"
+              />
+
+              <source
+                srcset="
+                  ./public/images/main/main-img-mob.jpg    1x,
+                  ./public/images/main/main-img-mob-2x.jpg 2x
+                "
+                media="(max-width: 1919px)"
+              />
+
+              <img
+                class="main-img"
+                src="./public/images/main/main-img-desk.jpg"
+                alt="rich-man"
+                width="402"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
+            <div class="card card-main">
+              <h2 class="card-title">3D Abstract Hand</h2>
+
+              <div class="card-user">
+                <img
+                  src="/public/images/main/main-user-1x.jpg"
+                  srcset="
+                    /public/images/main/main-user-1x.png 1x,
+                    /public/images/main/main-user-2x.png 2x
+                  "
+                  alt="Artist avatar"
+                  class="card-avatar"
+                />
+                <p class="card-name">@johnartist</p>
+
+                <img
+                  src="/public/images/main/main-check-1x.png"
+                  srcset="
+                    /public/images/main/main-check-1x.png 1x,
+                    /public/images/main/main-check-2x.png 2x
+                  "
+                  alt="Verified"
+                  class="card-check"
+                />
+              </div>
+
+              <div class="card-timer">
+                <span class="card-timer-label">Auction Ends in</span>
+                <div class="card-time">
+                  <span>18</span> Hours <span>25</span> Mins
+                  <span>44</span> Secs
+                </div>
+              </div>
+
+              <div class="card-info">
+                <h3 class="card-price">Reserve price</h3>
+
+                <svg class="card-price-icon" width="10.54" height="17.16">
+                  <use
+                    href="/public/icons/symbol-defs.svg#icon-main-card"
+                  ></use>
+                </svg>
+
+                <p class="card-value">
+                  ETH 9.31
+                  <span class="card-value-span">($29,8846)</span>
+                </p>
+              </div>
+
+              <button type="button" class="btn-card">
+                Place Bid
+                <svg class="btn-arrow" width="24.32" height="9.22">
+                  <use
+                    href="/public/icons/symbol-defs.svg#icon-arrow-place-bid"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- TOP NFTs ---------->
+
+      <section class="top-nfts">
+        <div class="container">
+          <div class="top-nfts-header">
+            <h2 class="top-nfts-title">Top NFT’s now</h2>
+
+            <button type="button" class="top-nfts-view-all">
+              View all
+              <svg class="top-nfts-arrow" width="51.96" height="26.53">
+                <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="top-nfts-list">
+            <li class="top-nfts-item">
+              <div class="top-nfts-image-wrapper">
+                <img
+                  src="/public/images/top-nft/space-man-1x.jpg"
+                  srcset="
+                    /public/images/top-nft/space-man-1x.jpg 1x,
+                    /public/images/top-nft/space-man-2x.jpg 2x
+                  "
+                  alt="space-man"
+                  class="top-nfts-image"
+                />
+              </div>
+
+              <div class="card card-top">
+                <h2 class="card-title">Apollo Eth #1289 NFT</h2>
+
+                <div class="card-user">
+                  <img
+                    src="/public/images/top-nft/user-1-1x.png"
+                    srcset="
+                      /public/images/top-nft/user-1-1x.png 1x,
+                      /public/images/top-nft/user-1-2x.png 2x
+                    "
+                    alt="Artist avatar"
+                    class="card-avatar"
+                  />
+                  <p class="card-name">@jhonartist</p>
+
+                  <img
+                    src="/public/images/main/main-check-1x.png"
+                    srcset="
+                      /public/images/main/main-check-1x.png 1x,
+                      /public/images/main/main-check-2x.png 2x
+                    "
+                    alt="Verified"
+                    class="card-check"
+                  />
+                </div>
+
+                <div class="card-timer">
+                  <span class="card-timer-label">Auction Ends in</span>
+                  <div class="card-time">
+                    <span>18</span> Hours <span>25</span> Mins
+                    <span>44</span> Secs
+                  </div>
+                </div>
+
+                <div class="card-info">
+                  <h4 class="card-price">Reserve price</h4>
+
+                  <svg class="card-price-icon" width="9.89" height="16.1">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+
+                  <p class="card-value">
+                    ETH 9.31
+                    <span class="card-value-span">($29,8846)</span>
+                  </p>
+                </div>
+
+                <button class="btn-card">
+                  Place Bid
+                  <svg class="btn-arrow" width="22" height="8.34">
+                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="top-nfts-item">
+              <div class="top-nfts-image-wrapper">
+                <img
+                  src="/public/images/top-nft/bull-1x.jpg"
+                  srcset="
+                    /public/images/top-nft/bull-1x.jpg 1x,
+                    /public/images/top-nft/bull-2x.jpg 2x
+                  "
+                  alt="bull"
+                  class="top-nfts-image"
+                />
+              </div>
+
+              <div class="card card-top">
+                <h2 class="card-title">Sassy Bull #1169 Art</h2>
+
+                <div class="card-user">
+                  <img
+                    src="/public/images/top-nft/user-2-1x.png"
+                    srcset="
+                      /public/images/top-nft/user-2-1x.png 1x,
+                      /public/images/top-nft/user-2-2x.png 2x
+                    "
+                    alt="Artist avatar"
+                    class="card-avatar"
+                  />
+                  <p class="card-name">@jhonartist</p>
+
+                  <img
+                    src="/public/images/main/main-check-1x.png"
+                    srcset="
+                      /public/images/main/main-check-1x.png 1x,
+                      /public/images/main/main-check-2x.png 2x
+                    "
+                    alt="Verified"
+                    class="card-check"
+                  />
+                </div>
+
+                <div class="card-timer">
+                  <span class="card-timer-label">Auction Ends in</span>
+                  <div class="card-time">
+                    <span>09</span> Hours <span>15</span> Mins
+                    <span>23</span> Secs
+                  </div>
+                </div>
+
+                <div class="card-info">
+                  <h4 class="card-price">Reserve price</h4>
+
+                  <svg class="card-price-icon" width="9.89" height="16.1">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+
+                  <p class="card-value">
+                    ETH 9.31
+                    <span class="card-value-span">($29,8846)</span>
+                  </p>
+                </div>
+
+                <button class="btn-card">
+                  Place Bid
+                  <svg class="btn-arrow" width="22" height="8.34">
+                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+
+            <li class="top-nfts-item">
+              <div class="top-nfts-image-wrapper">
+                <img
+                  src="/public/images/top-nft/pattern-1x.jpg"
+                  srcset="
+                    /public/images/top-nft/pattern-1x.jpg 1x,
+                    /public/images/top-nft/pattern-2x.jpg 2x
+                  "
+                  alt="pattern"
+                  class="top-nfts-image"
+                />
+              </div>
+
+              <div class="card card-top">
+                <h2 class="card-title">Satisfying 3D Art</h2>
+
+                <div class="card-user">
+                  <img
+                    src="/public/images/top-nft/user-3-1x.png"
+                    srcset="
+                      /public/images/top-nft/user-3-1x.png 1x,
+                      /public/images/top-nft/user-3-2x.png 2x
+                    "
+                    alt="Artist avatar"
+                    class="card-avatar"
+                  />
+                  <p class="card-name">@jhonartist</p>
+
+                  <img
+                    src="/public/images/main/main-check-1x.png"
+                    srcset="
+                      /public/images/main/main-check-1x.png 1x,
+                      /public/images/main/main-check-2x.png 2x
+                    "
+                    alt="Verified"
+                    class="card-check"
+                  />
+                </div>
+
+                <div class="card-timer">
+                  <span class="card-timer-label">Auction Ends in</span>
+                  <div class="card-time">
+                    <span>23</span> Hours <span>32</span> Mins
+                    <span>56</span> Secs
+                  </div>
+                </div>
+
+                <div class="card-info">
+                  <h4 class="card-price">Reserve price</h4>
+
+                  <svg class="card-price-icon" width="9.89" height="16.1">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+
+                  <p class="card-value">
+                    ETH 9.31
+                    <span class="card-value-span">($29,8846)</span>
+                  </p>
+                </div>
+
+                <button class="btn-card">
+                  Place Bid
+                  <svg class="btn-arrow" width="22" height="8.34">
+                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="btn-explore">
+            Explore
+            <svg class="btn-explore-icon" width="27.72" height="8.26">
+              <use href="/public/icons/symbol-defs.svg#icon-btn-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!---------- EXPLORE  ------------->
+
+      <section class="explore-collections">
+        <div class="container">
+          <h2>Explore Collections</h2>
+          <ul class="category-list">
+            <li><button class="btn btn-category">Photography</button></li>
+            <li><button class="btn btn-category">Brands</button></li>
+            <li><button class="btn btn-category">Art</button></li>
+            <li><button class="btn btn-category">Brands</button></li>
+            <li><button class="btn btn-category">Sports</button></li>
+            <li><button class="btn btn-category">Collectibles</button></li>
+            <li><button class="btn btn-category">Utility</button></li>
+            <li><button class="btn btn-category">Collectibles</button></li>
+          </ul>
+          <button class="btn btn-view-all">
+            View all
+            <svg class="icon icon-btn-arrow" width="21.53" height="6.41">
+              <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+            </svg>
+          </button>
+
+          <picture>
+            <source
+              srcset="
+                /public/images/explore/explore-img-desk-1x-min.png 1x,
+                /public/images/explore/explore-img-desk-2x-min.png 2x
+              "
+              media="(min-width: 1920px)"
+            />
+
+            <source
+              srcset="
+                /public/images/explore/explore-img-mob-1x-min.png 1x,
+                /public/images/explore/explore-img-mob-2x-min.png 2x
+              "
+              media="(max-width: 1919px)"
+            />
+
+            <img
+              src="/public/images/explore/explore-img-desk-1x-min.png"
+              alt="Character-girl-standing"
+              width="435.55"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+
+          <h2>Explore Collections</h2>
+          <button class="btn btn-view-all explore-users-view-all-btn">
+            View all
+            <svg class="icon icon-btn-arrow" width="21.53" height="6.41">
+              <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+            </svg>
+          </button>
+          <div class="user-cards">
+            <div class="user-card">
+              <picture>
+                <source
+                  srcset="
+                    /public/images/explore/background-desk-1x.jpg 1x,
+                    /public/images/explore/background-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1920px)"
+                />
+
+                <source
+                  srcset="
+                    /public/images/explore/background-mob-1x.jpg 1x,
+                    /public/images/explore/background-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 1919px)"
+                />
+
+                <img
+                  src="/public/images/explore/background-desk-1x.jpg"
+                  alt="background-image"
+                  width="431.13"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+
+              <img
+                src="/public/images/explore/user-1-1x-min.png"
+                srcset="
+                  /public/images/explore/user-1-1x-min.png 1x,
+                  /public/images/explore/user-1-2x-min.png 2x
+                "
+                alt="User avatar"
+                class="avatar-img"
+              />
+              <h3>Jhones Nickey</h3>
+              <p>@jhonartist</p>
+              <img
+                src="/public/images/main/main-check-1x.png"
+                srcset="
+                  /public/images/main/main-check-1x.png 1x,
+                  /public/images/main/main-check-2x.png 2x
+                "
+                alt="Verified"
+                class="card-check"
+              />
+              <ul class="user-stats">
+                <li>
+                  <p>125</p>
+                  <h4>Folowers</h4>
+                </li>
+                <li>
+                  <p>256</p>
+                  <h4>Following</h4>
+                </li>
+                <li>
+                  <p>129</p>
+                  <h4>Artworks</h4>
+                </li>
+              </ul>
+              <button class="btn btn-follow">Follow</button>
+            </div>
+            <div class="user-card">
+              <picture>
+                <source
+                  srcset="
+                    /public/images/explore/background-desk-1x.jpg 1x,
+                    /public/images/explore/background-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1920px)"
+                />
+
+                <source
+                  srcset="
+                    /public/images/explore/background-mob-1x.jpg 1x,
+                    /public/images/explore/background-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 1919px)"
+                />
+
+                <img
+                  src="/public/images/explore/background-desk-1x.jpg"
+                  alt="background-image"
+                  width="431.13"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <img
+                src="/public/images/explore/user-2-1x-min.png"
+                srcset="
+                  /public/images/explore/user-2-1x-min.png 1x,
+                  /public/images/explore/user-2-2x-min.png 2x
+                "
+                alt="User avatar"
+                class="avatar-img"
+              />
+              <h3>Cody Fisher</h3>
+              <p>@codyfishe</p>
+              <ul class="user-stats">
+                <li>
+                  <p>356</p>
+                  <h4>Folowers</h4>
+                </li>
+                <li>
+                  <p>456</p>
+                  <h4>Following</h4>
+                </li>
+                <li>
+                  <p>89</p>
+                  <h4>Artworks</h4>
+                </li>
+              </ul>
+              <button class="btn btn-follow">Follow</button>
+            </div>
+            <div class="user-card">
+              <picture>
+                <source
+                  srcset="
+                    /public/images/explore/background-desk-1x.jpg 1x,
+                    /public/images/explore/background-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1920px)"
+                />
+
+                <source
+                  srcset="
+                    /public/images/explore/background-mob-1x.jpg 1x,
+                    /public/images/explore/background-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 1919px)"
+                />
+
+                <img
+                  src="/public/images/explore/background-desk-1x.jpg"
+                  alt="background-image"
+                  width="431.13"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <img
+                src="/public/images/explore/user-3-1x-min.png"
+                srcset="
+                  /public/images/explore/user-3-1x-min.png 1x,
+                  /public/images/explore/user-3-2x-min.png 2x
+                "
+                alt="User avatar"
+                class="avatar-img"
+              />
+              <h3>Jerome Bell</h3>
+              <p>@jeromebt</p>
+              <ul class="user-stats">
+                <li>
+                  <p>546</p>
+                  <h4>Folowers</h4>
+                </li>
+                <li>
+                  <p>789</p>
+                  <h4>Following</h4>
+                </li>
+                <li>
+                  <p>54</p>
+                  <h4>Artworks</h4>
+                </li>
+              </ul>
+              <button class="btn btn-follow">Follow</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
