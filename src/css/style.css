@@ -155,7 +155,7 @@ button {
   margin-bottom: 40px;
 }
 
-/* .main-buttons {
+.main-buttons {
   display: flex;
   align-items: center;
   gap: 19.69px;
@@ -204,9 +204,9 @@ button {
   display: inline-block;
   stroke: currentColor;
   fill: currentColor;
-} */
+}
 
-.main-buttons {
+/* .main-buttons {
   display: flex;
   align-items: center;
   gap: 19.69px;
@@ -252,4 +252,4 @@ button {
   display: inline-block;
   fill: currentColor;
   stroke: currentColor;
-}
+} */
