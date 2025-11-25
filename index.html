@@ -89,27 +89,8 @@
                 </svg>
               </button>
 
-              <a href="./index.html" class="btn btn-secondary">Create NFT’s</a>
+              <a href="./index.html" class="btn-secondary">Create NFT’s</a>
             </div>
-
-            <!-- <div class="main-buttons">
-              <button type="button" class="main-btn">
-                <svg
-                  class="main-btn-bg"
-                  viewBox="0 0 47 32"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="/icons/symbol-defs.svg#icon-main-btn-bg"></use>
-                </svg>
-
-                <span class="main-btn-text">Explore</span>
-
-                <svg class="btn-arrow-icon" width="27.72" height="8.26">
-                  <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
-                </svg>
-              </button>
-            </div> -->
 
             <div class="main-stats">
               <ul class="main-stats-list">
@@ -160,7 +141,7 @@
           </div>
 
           <div class="main-media">
-            <picture>
+            <picture class="main-picture">
               <source
                 srcset="
                   ./public/images/main/main-img-desk.jpg    1x,
@@ -188,62 +169,75 @@
             </picture>
 
             <div class="card card-main">
-              <h2 class="card-title">3D Abstract Hand</h2>
+              <div class="card-col card-col-left">
+                <h2 class="card-title">3D Abstract Hand</h2>
 
-              <div class="card-user">
-                <img
-                  src="/public/images/main/main-user-1x.jpg"
-                  srcset="
-                    /public/images/main/main-user-1x.png 1x,
-                    /public/images/main/main-user-2x.png 2x
-                  "
-                  alt="Artist avatar"
-                  class="card-avatar"
-                />
-                <p class="card-name">@johnartist</p>
+                <div class="card-user">
+                  <img
+                    src="/public/images/main/main-user-1x.jpg"
+                    srcset="
+                      /public/images/main/main-user-1x.png 1x,
+                      /public/images/main/main-user-2x.png 2x
+                    "
+                    alt="Artist avatar"
+                    class="card-avatar"
+                  />
+                  <p class="card-name">@johnartist</p>
 
-                <img
-                  src="/public/images/main/main-check-1x.png"
-                  srcset="
-                    /public/images/main/main-check-1x.png 1x,
-                    /public/images/main/main-check-2x.png 2x
-                  "
-                  alt="Verified"
-                  class="card-check"
-                />
-              </div>
+                  <img
+                    src="/public/images/main/main-check-1x.png"
+                    srcset="
+                      /public/images/main/main-check-1x.png 1x,
+                      /public/images/main/main-check-2x.png 2x
+                    "
+                    alt="Verified"
+                    class="card-check"
+                  />
+                </div>
 
-              <div class="card-timer">
-                <span class="card-timer-label">Auction Ends in</span>
-                <div class="card-time">
-                  <span>18</span> Hours <span>25</span> Mins
-                  <span>44</span> Secs
+                <p class="card-price-label">Reserve price</p>
+
+                <div class="card-eth">
+                  <svg class="card-price-icon" width="10.54" height="17.16">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+
+                  <p class="card-value">
+                    ETH 9.31
+                    <span class="card-value-span">($29,8846)</span>
+                  </p>
                 </div>
               </div>
 
-              <div class="card-info">
-                <h3 class="card-price">Reserve price</h3>
+              <div class="card-col card-col-right">
+                <p class="card-timer-label">Auction Ends in</p>
 
-                <svg class="card-price-icon" width="10.54" height="17.16">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
+                <div class="card-counter">
+                  <div class="card-counter-item">
+                    <span class="card-counter-number">18</span>
+                    <span class="card-counter-text">Hours</span>
+                  </div>
+                  <div class="card-counter-item">
+                    <span class="card-counter-number">25</span>
+                    <span class="card-counter-text">Mins</span>
+                  </div>
+                  <div class="card-counter-item">
+                    <span class="card-counter-number">44</span>
+                    <span class="card-counter-text">Secs</span>
+                  </div>
+                </div>
 
-                <p class="card-value">
-                  ETH 9.31
-                  <span class="card-value-span">($29,8846)</span>
-                </p>
+                <button type="button" class="btn-card">
+                  Place Bid
+                  <svg class="btn-arrow" width="23.45" height="8.89">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-arrow-place-bid"
+                    ></use>
+                  </svg>
+                </button>
               </div>
-
-              <button type="button" class="btn-card">
-                Place Bid
-                <svg class="btn-arrow" width="24.32" height="9.22">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-arrow-place-bid"
-                  ></use>
-                </svg>
-              </button>
             </div>
           </div>
         </div>
