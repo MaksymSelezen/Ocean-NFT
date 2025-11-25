@@ -571,10 +571,14 @@ button {
 } */
 /*!  */
 
-.main-img {
-  display: block;
-  border-radius: 20px;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
+.main-picture {
+  display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
+
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 60px);
 }
 
 .card-main {
