@@ -13,11 +13,11 @@ body {
 }
 
 body {
+  margin: 0;
+  overflow-x: hidden;
   font-family: 'Rajdhani', sans-serif;
   background-color: #241043;
-  color: #ffffff;
-  margin: 0;
-  overflow-x: hidden; /* горизонтальний скрол */
+  color: #fff;
 }
 
 ul,
@@ -64,11 +64,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding-top: 26.88px;
-  padding-bottom: 11.65px;
-  padding-left: 23px;
-  padding-right: 28.29px;
+  padding: 26.88px 28.29px 11.65px 23px;
 }
 
 .header-logo {
@@ -86,7 +82,7 @@ button {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: fff;
+  color: #fff;
 }
 
 .header-logo-text-accent {
@@ -102,10 +98,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 0;
   border: none;
-  background-color: transparent;
+  background: transparent;
 }
 
 .header-burger-icon {
@@ -116,7 +111,7 @@ button {
 .header-burger-icon,
 .header-cart,
 .header-user {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 /********** MAIN **********/
@@ -126,15 +121,14 @@ button {
 }
 
 .main-title {
+  max-width: 291px;
+  margin-bottom: 40px;
+  padding-left: 5px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.374;
   color: #fff;
-
-  max-width: 291px;
-  margin-bottom: 40px;
-  padding-left: 5px;
 }
 
 .main-title-accent {
@@ -146,15 +140,13 @@ button {
 }
 
 .main-text {
-  font-family: 'Rajdhani', sans-serif;
+  max-width: 315px;
+  margin-bottom: 40px;
+  padding-left: 5px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #fff;
-
-  max-width: 315px;
-  margin-bottom: 40px;
-  padding-left: 5px;
 }
 
 .main-buttons {
@@ -166,29 +158,21 @@ button {
 }
 
 .main-btn {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #fff;
-
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
-  padding-left: 28px;
-  padding-top: 9px;
-  padding-right: 17.21px;
-  padding-bottom: 12.21px;
-
+  padding: 9px 17.21px 12.21px 28px;
   border: none;
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-
-  filter: drop-shadow(0 2px 57px rgba(255, 86, 246, 0.51));
-
   border-radius: 1px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  filter: drop-shadow(0 2px 57px rgba(255, 86, 246, 0.51));
   overflow: hidden;
 }
 
@@ -196,9 +180,8 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-
+  z-index: -2;
   background: linear-gradient(130deg, #ffa6fa 47%, #3c79d4 97%);
-
   clip-path: polygon(
     16.78% 0,
     100% 0,
@@ -207,15 +190,13 @@ button {
     0 100%,
     0 30.99%
   );
-
-  z-index: -2;
 }
 
 .main-btn::after {
   content: '';
   position: absolute;
   inset: 1px;
-
+  z-index: -1;
   background: linear-gradient(
     310deg,
     #ff56f6 18.31%,
@@ -223,7 +204,6 @@ button {
     #3bace2 85.44%,
     #406aff 100%
   );
-
   clip-path: polygon(
     16.78% 0,
     100% 0,
@@ -232,23 +212,18 @@ button {
     0 100%,
     0 30.99%
   );
+}
 
-  z-index: -1;
+.main-btn > * {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-arrow-icon {
   display: inline-block;
   stroke: currentColor;
   fill: currentColor;
-  position: relative;
-  z-index: 1;
-
   transform: translateY(2px);
-}
-
-.main-btn > * {
-  position: relative;
-  z-index: 1;
 }
 
 .btn-secondary {
@@ -282,7 +257,6 @@ button {
 }
 
 .main-stats-item:nth-child(3) {
-  margin-right: 0;
   width: 72px;
 }
 
@@ -304,6 +278,10 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.main-icons {
+  padding-left: 5px;
+}
+
 .partners-list {
   display: flex;
   flex-wrap: wrap;
@@ -314,7 +292,6 @@ button {
 
 .partners-item {
   flex: 0 1 calc((100% - 25px) / 2);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,27 +304,59 @@ button {
   fill: rgba(255, 255, 255, 0.7);
 }
 
-.main-picture {
-  display: inline-block;
-  border-radius: 5px;
-  overflow: hidden;
-
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
-
-  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 60px);
+.main-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 108.21px;
 }
 
-.card-main {
+.main-picture {
   position: relative;
-  padding-left: 22.38px;
-  padding-right: 20.25px;
-  padding-top: 26.65px;
-  padding-bottom: 19.18px;
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 324px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
+  background-color: #241043;
+}
 
+.main-picture picture {
+  display: block;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-picture::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: -10px;
+  z-index: 2;
+  width: 70px;
+  height: 160px;
+  background-color: #241043;
+  transform: rotate(55deg);
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 324px;
+  padding: 26.65px 20.25px 19.18px 22.38px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
   color: #fff;
   font-family: 'Rajdhani', sans-serif;
-
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1) -1.52%,
@@ -355,31 +364,29 @@ button {
   );
   backdrop-filter: blur(30.4001px);
   -webkit-backdrop-filter: blur(30.4001px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8.84367px;
+}
 
+.card-main {
+  margin-top: -48px;
   clip-path: polygon(
     70px 0,
     100% 0,
-    100% calc(100% - 0px),
+    100% 100%,
     calc(100% - 45px) 100%,
     0 100%,
     0 45px
   );
-
-  display: flex;
-  justify-content: space-between;
 }
 
 .card-main::before {
   content: '';
   position: absolute;
-  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  top: -51px;
+  left: -16px;
   width: 50px;
   height: 120px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
   transform: rotate(57deg);
-  left: -16px;
-  top: -51px;
 }
 
 .card-col {
@@ -397,12 +404,10 @@ button {
 }
 
 .card-title {
-  font-family: 'Rajdhani', sans-serif;
+  width: 142.82px;
   font-weight: 700;
   font-size: 17px;
   line-height: 2;
-  color: #fff;
-  width: 142.82px;
 }
 
 .card-user {
@@ -419,12 +424,10 @@ button {
 }
 
 .card-name {
-  font-family: 'Rajdhani', sans-serif;
+  width: 71.41px;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.28571;
-  color: #fff;
-  width: 71.41px;
 }
 
 .card-check {
@@ -433,15 +436,13 @@ button {
 }
 
 .card-price-label {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 3.2;
-  color: #fff;
-  opacity: 0.7;
   width: 58.62px;
   height: 34.11px;
   margin-top: 9.59px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 3.2;
+  opacity: 0.7;
 }
 
 .card-eth {
@@ -455,34 +456,28 @@ button {
 }
 
 .card-value {
+  margin-left: 5.66px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 9px;
   color: #fff;
-  margin-left: 5.66px;
 }
 
 .card-value-span {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 400;
+  margin-left: 5.33px;
   font-size: 10px;
   line-height: 3.2;
-  color: #fff;
   opacity: 0.7;
-  margin-left: 5.33px;
 }
 
 .card-timer-label {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 3.2;
-  color: #fff;
-  opacity: 0.7;
-
   width: 67.14px;
   height: 34.11px;
   margin-right: auto;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 3.2;
+  opacity: 0.7;
 }
 
 .card-counter {
@@ -498,13 +493,10 @@ button {
 }
 
 .card-counter-number {
-  font-family: 'Rajdhani', sans-serif;
+  margin-top: -12px;
   font-weight: 600;
   font-size: 17px;
   line-height: 2;
-  color: #fff;
-
-  margin-top: -12px;
 }
 
 .card-counter-item:nth-child(1) .card-counter-number {
@@ -523,18 +515,14 @@ button {
 }
 
 .card-counter-text {
-  font-family: 'Rajdhani', sans-serif;
+  width: 20.25px;
+  height: 34.11px;
+  margin-top: -12px;
+  margin-bottom: 19.18px;
   font-weight: 500;
   font-size: 10px;
   line-height: 3.2;
-  color: #fff;
   opacity: 0.7;
-
-  width: 20.25px;
-  height: 34.11px;
-
-  margin-top: -12px;
-  margin-bottom: 19.18px;
 }
 
 .btn-card {
@@ -542,20 +530,34 @@ button {
   align-items: center;
   justify-content: center;
   gap: 9.59px;
-
-  padding-left: 9.59px;
-  padding-top: 7.46px;
-  padding-right: 8.53px;
-  padding-bottom: 7.46px;
-  border-radius: 2.21092px;
+  padding: 7.46px 8.53px 7.46px 9.59px;
   border: none;
-  cursor: pointer;
-
-  font-family: 'Rajdhani', sans-serif;
+  border-radius: 2px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   font-weight: 600;
   font-size: 17px;
   color: #fff;
+  box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
 
+.btn-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  border-radius: inherit;
+  background: linear-gradient(89.89deg, #42a6e3 2.33%, #ff56f6 101.4%);
+}
+
+.btn-card::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  border-radius: inherit;
   background: linear-gradient(
     92.23deg,
     #ff56f6 21.43%,
@@ -563,38 +565,150 @@ button {
     #3bace2 100%,
     #406aff 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
 
+.btn-card > * {
   position: relative;
-  overflow: hidden;
-  z-index: 0;
-
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-}
-
-.btn-card::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  z-index: -1;
-  background: linear-gradient(89.89deg, #42a6e3 2.33%, #ff56f6 101.4%);
-}
-
-.btn-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 4.42184px 90px rgba(255, 86, 246, 0.7);
-  background: linear-gradient(89.89deg, #42a6e3 2.33%, #ff56f6 101.4%);
-}
-
-.btn-card:active {
-  transform: scale(0.95);
+  z-index: 1;
 }
 
 .btn-arrow {
   display: inline-block;
   stroke: currentColor;
   fill: currentColor;
+}
+
+/********** TOP NFTs **********/
+
+.top-nfts {
+  margin-bottom: 108.79px;
+}
+
+.top-nfts-title {
+  margin-bottom: 32.36px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.top-nfts-view-all {
+  display: none;
+}
+
+.top-nfts-item {
+  margin-bottom: 25px;
+}
+
+.top-nfts-image {
+  max-width: 303px;
+}
+
+.card-top {
+  max-width: 303px;
+  padding: 24.87px 19px 18px 21.22px;
+  border-radius: 0;
+}
+
+.card-top .card-title {
+  width: 145.82px;
+  height: 31.94px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.card-top .card-avatar {
+  width: 26px;
+  height: 26px;
+}
+
+.card-top .card-name {
+  width: 66.99px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 2.28571;
+}
+
+.card-top .card-check {
+  width: 11px;
+  height: 12px;
+}
+
+.card-top .card-price-label {
+  width: 54.99px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 3.2;
+}
+
+.card-top .card-price-icon {
+  width: 9.89px;
+  height: 16.1px;
+}
+
+.card-top .card-value {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 7px;
+  color: #fff;
+}
+
+.card-top .card-value-span {
+  font-size: 8px;
+  line-height: 3.2;
+}
+
+.card-top .card-timer-label {
+  width: 62.99px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 3.2;
+}
+
+.card-top .card-counter-number {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.card-top .card-counter-text {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 3.2;
+}
+
+.card-top .btn-card {
+  padding: 7px 8px 7px 9px;
+  border-radius: 0;
+  gap: 9px;
+  font-size: 13px;
+}
+
+.card-top .card-counter-item:nth-child(1) .card-counter-number {
+  width: 14px;
+  height: 32px;
+}
+
+.card-top .card-counter-item:nth-child(2) .card-counter-number {
+  width: 16px;
+  height: 32px;
+}
+
+.card-top .card-counter-item:nth-child(3) .card-counter-number {
+  width: 18px;
+  height: 32px;
+}
+
+.btn-explore {
+  display: flex;
+  margin: 40px auto 0;
+  filter: none;
+}
+
+.btn-explore::after {
+  background: #241043;
 }

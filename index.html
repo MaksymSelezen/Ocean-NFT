@@ -141,32 +141,34 @@
           </div>
 
           <div class="main-media">
-            <picture class="main-picture">
-              <source
-                srcset="
-                  ./public/images/main/main-img-desk.jpg    1x,
-                  ./public/images/main/main-img-desk-2x.jpg 2x
-                "
-                media="(min-width: 1920px)"
-              />
+            <div class="main-picture">
+              <picture>
+                <source
+                  srcset="
+                    ./public/images/main/main-img-desk.jpg    1x,
+                    ./public/images/main/main-img-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1920px)"
+                />
 
-              <source
-                srcset="
-                  ./public/images/main/main-img-mob.jpg    1x,
-                  ./public/images/main/main-img-mob-2x.jpg 2x
-                "
-                media="(max-width: 1919px)"
-              />
+                <source
+                  srcset="
+                    ./public/images/main/main-img-mob.jpg    1x,
+                    ./public/images/main/main-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 1919px)"
+                />
 
-              <img
-                class="main-img"
-                src="./public/images/main/main-img-desk.jpg"
-                alt="rich-man"
-                width="402"
-                loading="lazy"
-                decoding="async"
-              />
-            </picture>
+                <img
+                  class="main-img"
+                  src="./public/images/main/main-img-desk.jpg"
+                  alt="rich-man"
+                  width="402"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
 
             <div class="card card-main">
               <div class="card-col card-col-left">
@@ -273,60 +275,73 @@
               </div>
 
               <div class="card card-top">
-                <h2 class="card-title">Apollo Eth #1289 NFT</h2>
+                <div class="card-col card-col-left">
+                  <h2 class="card-title">Apollo Eth #1289 NFT</h2>
 
-                <div class="card-user">
-                  <img
-                    src="/public/images/top-nft/user-1-1x.png"
-                    srcset="
-                      /public/images/top-nft/user-1-1x.png 1x,
-                      /public/images/top-nft/user-1-2x.png 2x
-                    "
-                    alt="Artist avatar"
-                    class="card-avatar"
-                  />
-                  <p class="card-name">@jhonartist</p>
+                  <div class="card-user">
+                    <img
+                      src="/public/images/top-nft/user-1-1x.png"
+                      srcset="
+                        /public/images/top-nft/user-1-1x.png 1x,
+                        /public/images/top-nft/user-1-2x.png 2x
+                      "
+                      alt="Artist avatar"
+                      class="card-avatar"
+                    />
+                    <p class="card-name">@jhonartist</p>
 
-                  <img
-                    src="/public/images/main/main-check-1x.png"
-                    srcset="
-                      /public/images/main/main-check-1x.png 1x,
-                      /public/images/main/main-check-2x.png 2x
-                    "
-                    alt="Verified"
-                    class="card-check"
-                  />
-                </div>
+                    <img
+                      src="/public/images/main/main-check-1x.png"
+                      srcset="
+                        /public/images/main/main-check-1x.png 1x,
+                        /public/images/main/main-check-2x.png 2x
+                      "
+                      alt="Verified"
+                      class="card-check"
+                    />
+                  </div>
 
-                <div class="card-timer">
-                  <span class="card-timer-label">Auction Ends in</span>
-                  <div class="card-time">
-                    <span>18</span> Hours <span>25</span> Mins
-                    <span>44</span> Secs
+                  <p class="card-price-label">Reserve price</p>
+
+                  <div class="card-eth">
+                    <svg class="card-price-icon" width="9.89" height="16.1">
+                      <use
+                        href="/public/icons/symbol-defs.svg#icon-main-card"
+                      ></use>
+                    </svg>
+
+                    <p class="card-value">
+                      ETH 9.31
+                      <span class="card-value-span">($29,8846)</span>
+                    </p>
                   </div>
                 </div>
 
-                <div class="card-info">
-                  <h4 class="card-price">Reserve price</h4>
+                <div class="card-col card-col-right">
+                  <p class="card-timer-label">Auction Ends in</p>
 
-                  <svg class="card-price-icon" width="9.89" height="16.1">
-                    <use
-                      href="/public/icons/symbol-defs.svg#icon-main-card"
-                    ></use>
-                  </svg>
+                  <div class="card-counter">
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">18</span>
+                      <span class="card-counter-text">Hours</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">25</span>
+                      <span class="card-counter-text">Mins</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">44</span>
+                      <span class="card-counter-text">Secs</span>
+                    </div>
+                  </div>
 
-                  <p class="card-value">
-                    ETH 9.31
-                    <span class="card-value-span">($29,8846)</span>
-                  </p>
+                  <button type="button" class="btn-card">
+                    Place Bid
+                    <svg class="btn-arrow" width="22" height="8.34">
+                      <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-
-                <button class="btn-card">
-                  Place Bid
-                  <svg class="btn-arrow" width="22" height="8.34">
-                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
-                  </svg>
-                </button>
               </div>
             </li>
 
@@ -344,60 +359,73 @@
               </div>
 
               <div class="card card-top">
-                <h2 class="card-title">Sassy Bull #1169 Art</h2>
+                <div class="card-col card-col-left">
+                  <h2 class="card-title">Sassy Bull #1169 Art</h2>
 
-                <div class="card-user">
-                  <img
-                    src="/public/images/top-nft/user-2-1x.png"
-                    srcset="
-                      /public/images/top-nft/user-2-1x.png 1x,
-                      /public/images/top-nft/user-2-2x.png 2x
-                    "
-                    alt="Artist avatar"
-                    class="card-avatar"
-                  />
-                  <p class="card-name">@jhonartist</p>
+                  <div class="card-user">
+                    <img
+                      src="/public/images/top-nft/user-2-1x.png"
+                      srcset="
+                        /public/images/top-nft/user-2-1x.png 1x,
+                        /public/images/top-nft/user-2-2x.png 2x
+                      "
+                      alt="Artist avatar"
+                      class="card-avatar"
+                    />
+                    <p class="card-name">@jhonartist</p>
 
-                  <img
-                    src="/public/images/main/main-check-1x.png"
-                    srcset="
-                      /public/images/main/main-check-1x.png 1x,
-                      /public/images/main/main-check-2x.png 2x
-                    "
-                    alt="Verified"
-                    class="card-check"
-                  />
-                </div>
+                    <img
+                      src="/public/images/main/main-check-1x.png"
+                      srcset="
+                        /public/images/main/main-check-1x.png 1x,
+                        /public/images/main/main-check-2x.png 2x
+                      "
+                      alt="Verified"
+                      class="card-check"
+                    />
+                  </div>
 
-                <div class="card-timer">
-                  <span class="card-timer-label">Auction Ends in</span>
-                  <div class="card-time">
-                    <span>09</span> Hours <span>15</span> Mins
-                    <span>23</span> Secs
+                  <p class="card-price-label">Reserve price</p>
+
+                  <div class="card-eth">
+                    <svg class="card-price-icon" width="9.89" height="16.1">
+                      <use
+                        href="/public/icons/symbol-defs.svg#icon-main-card"
+                      ></use>
+                    </svg>
+
+                    <p class="card-value">
+                      ETH 9.31
+                      <span class="card-value-span">($29,8846)</span>
+                    </p>
                   </div>
                 </div>
 
-                <div class="card-info">
-                  <h4 class="card-price">Reserve price</h4>
+                <div class="card-col card-col-right">
+                  <p class="card-timer-label">Auction Ends in</p>
 
-                  <svg class="card-price-icon" width="9.89" height="16.1">
-                    <use
-                      href="/public/icons/symbol-defs.svg#icon-main-card"
-                    ></use>
-                  </svg>
+                  <div class="card-counter">
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">09</span>
+                      <span class="card-counter-text">Hours</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">15</span>
+                      <span class="card-counter-text">Mins</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">23</span>
+                      <span class="card-counter-text">Secs</span>
+                    </div>
+                  </div>
 
-                  <p class="card-value">
-                    ETH 9.31
-                    <span class="card-value-span">($29,8846)</span>
-                  </p>
+                  <button type="button" class="btn-card">
+                    Place Bid
+                    <svg class="btn-arrow" width="22" height="8.34">
+                      <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-
-                <button class="btn-card">
-                  Place Bid
-                  <svg class="btn-arrow" width="22" height="8.34">
-                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
-                  </svg>
-                </button>
               </div>
             </li>
 
@@ -415,66 +443,80 @@
               </div>
 
               <div class="card card-top">
-                <h2 class="card-title">Satisfying 3D Art</h2>
+                <div class="card-col card-col-left">
+                  <h2 class="card-title">Satisfying 3D Art</h2>
 
-                <div class="card-user">
-                  <img
-                    src="/public/images/top-nft/user-3-1x.png"
-                    srcset="
-                      /public/images/top-nft/user-3-1x.png 1x,
-                      /public/images/top-nft/user-3-2x.png 2x
-                    "
-                    alt="Artist avatar"
-                    class="card-avatar"
-                  />
-                  <p class="card-name">@jhonartist</p>
+                  <div class="card-user">
+                    <img
+                      src="/public/images/top-nft/user-3-1x.png"
+                      srcset="
+                        /public/images/top-nft/user-3-1x.png 1x,
+                        /public/images/top-nft/user-3-2x.png 2x
+                      "
+                      alt="Artist avatar"
+                      class="card-avatar"
+                    />
+                    <p class="card-name">@jhonartist</p>
 
-                  <img
-                    src="/public/images/main/main-check-1x.png"
-                    srcset="
-                      /public/images/main/main-check-1x.png 1x,
-                      /public/images/main/main-check-2x.png 2x
-                    "
-                    alt="Verified"
-                    class="card-check"
-                  />
-                </div>
+                    <img
+                      src="/public/images/main/main-check-1x.png"
+                      srcset="
+                        /public/images/main/main-check-1x.png 1x,
+                        /public/images/main/main-check-2x.png 2x
+                      "
+                      alt="Verified"
+                      class="card-check"
+                    />
+                  </div>
 
-                <div class="card-timer">
-                  <span class="card-timer-label">Auction Ends in</span>
-                  <div class="card-time">
-                    <span>23</span> Hours <span>32</span> Mins
-                    <span>56</span> Secs
+                  <p class="card-price-label">Reserve price</p>
+
+                  <div class="card-eth">
+                    <svg class="card-price-icon" width="9.89" height="16.1">
+                      <use
+                        href="/public/icons/symbol-defs.svg#icon-main-card"
+                      ></use>
+                    </svg>
+
+                    <p class="card-value">
+                      ETH 9.31
+                      <span class="card-value-span">($29,8846)</span>
+                    </p>
                   </div>
                 </div>
 
-                <div class="card-info">
-                  <h4 class="card-price">Reserve price</h4>
+                <div class="card-col card-col-right">
+                  <p class="card-timer-label">Auction Ends in</p>
 
-                  <svg class="card-price-icon" width="9.89" height="16.1">
-                    <use
-                      href="/public/icons/symbol-defs.svg#icon-main-card"
-                    ></use>
-                  </svg>
+                  <div class="card-counter">
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">23</span>
+                      <span class="card-counter-text">Hours</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">32</span>
+                      <span class="card-counter-text">Mins</span>
+                    </div>
+                    <div class="card-counter-item">
+                      <span class="card-counter-number">56</span>
+                      <span class="card-counter-text">Secs</span>
+                    </div>
+                  </div>
 
-                  <p class="card-value">
-                    ETH 9.31
-                    <span class="card-value-span">($29,8846)</span>
-                  </p>
+                  <button type="button" class="btn-card">
+                    Place Bid
+                    <svg class="btn-arrow" width="22" height="8.34">
+                      <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-
-                <button class="btn-card">
-                  Place Bid
-                  <svg class="btn-arrow" width="22" height="8.34">
-                    <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
-                  </svg>
-                </button>
               </div>
             </li>
           </ul>
-          <button type="button" class="btn-explore">
+
+          <button type="button" class="main-btn btn-explore">
             Explore
-            <svg class="btn-explore-icon" width="27.72" height="8.26">
+            <svg class="btn-arrow-icon" width="27.72" height="8.26">
               <use href="/public/icons/symbol-defs.svg#icon-btn-arrow"></use>
             </svg>
           </button>
@@ -1216,7 +1258,6 @@
 
         <nav class="footer-nav" aria-label="Footer navigation">
           <ul class="footer-nav-columns">
-            <!-- Market place -->
             <li class="footer-nav-column">
               <button class="footer-nav-toggle" type="button">
                 <span class="footer-nav-title">Market place</span>
