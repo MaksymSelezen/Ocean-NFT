@@ -527,16 +527,32 @@
 
       <section class="explore-collections">
         <div class="container">
-          <h2>Explore Collections</h2>
+          <h2 class="explore-title">Explore Collections</h2>
           <ul class="category-list">
-            <li><button class="btn btn-category">Photography</button></li>
-            <li><button class="btn btn-category">Brands</button></li>
-            <li><button class="btn btn-category">Art</button></li>
-            <li><button class="btn btn-category">Brands</button></li>
-            <li><button class="btn btn-category">Sports</button></li>
-            <li><button class="btn btn-category">Collectibles</button></li>
-            <li><button class="btn btn-category">Utility</button></li>
-            <li><button class="btn btn-category">Collectibles</button></li>
+            <li class="category-item">
+              <button class="btn btn-category">Photography</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Brands</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Art</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Brands</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Sports</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Collectibles</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Utility</button>
+            </li>
+            <li class="category-item">
+              <button class="btn btn-category">Collectibles</button>
+            </li>
           </ul>
           <button class="btn btn-view-all">
             View all
@@ -545,7 +561,7 @@
             </svg>
           </button>
 
-          <picture>
+          <picture class="explore-collections-picture">
             <source
               srcset="
                 /public/images/explore/explore-img-desk-1x-min.png 1x,
@@ -563,6 +579,7 @@
             />
 
             <img
+              class="explore-collections-img"
               src="/public/images/explore/explore-img-desk-1x-min.png"
               alt="Character-girl-standing"
               loading="lazy"
@@ -570,16 +587,22 @@
             />
           </picture>
 
-          <h2>Explore Collections</h2>
-          <button class="btn btn-view-all explore-users-view-all-btn">
-            View all
-            <svg class="icon icon-btn-arrow" width="21.53" height="6.41">
-              <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
-            </svg>
-          </button>
+          <!-- HEADER секції користувачів -->
+          <div class="explore-users-header">
+            <h2 class="explore-title">Explore Collections</h2>
+
+            <button class="btn btn-view-all explore-users-view-all-btn">
+              View all
+              <svg class="icon icon-btn-arrow" width="21.53" height="6.41">
+                <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+              </svg>
+            </button>
+          </div>
+
           <div class="user-cards">
+            <!-- CARD 1 -->
             <div class="user-card">
-              <picture>
+              <picture class="user-card-bg">
                 <source
                   srcset="
                     /public/images/explore/background-desk-1x.jpg 1x,
@@ -611,37 +634,49 @@
                   /public/images/explore/user-1-2x-min.png 2x
                 "
                 alt="User avatar"
-                class="avatar-img"
+                class="user-card-avatar"
               />
-              <h3>Jhones Nickey</h3>
-              <p>@jhonartist</p>
-              <img
-                src="/public/images/main/main-check-1x.png"
-                srcset="
-                  /public/images/main/main-check-1x.png 1x,
-                  /public/images/main/main-check-2x.png 2x
-                "
-                alt="Verified"
-                class="card-check"
-              />
-              <ul class="user-stats">
-                <li>
-                  <p>125</p>
-                  <h4>Folowers</h4>
-                </li>
-                <li>
-                  <p>256</p>
-                  <h4>Following</h4>
-                </li>
-                <li>
-                  <p>129</p>
-                  <h4>Artworks</h4>
-                </li>
-              </ul>
-              <button class="btn btn-follow">Follow</button>
+
+              <div class="user-card-content">
+                <h3 class="user-card-name">Jhones Nickey</h3>
+
+                <p class="user-card-username">
+                  @jhonartist
+                  <img
+                    src="/public/images/main/main-check-1x.png"
+                    srcset="
+                      /public/images/main/main-check-1x.png 1x,
+                      /public/images/main/main-check-2x.png 2x
+                    "
+                    alt="Verified"
+                    class="user-card-check"
+                  />
+                </p>
+
+                <ul class="user-card-stats">
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">125</p>
+                    <h4 class="user-card-stat-label">Folowers</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">256</p>
+                    <h4 class="user-card-stat-label">Following</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">129</p>
+                    <h4 class="user-card-stat-label">Artworks</h4>
+                  </li>
+                </ul>
+
+                <button class="btn btn-follow user-card-follow-btn">
+                  Follow
+                </button>
+              </div>
             </div>
+
+            <!-- CARD 2 -->
             <div class="user-card">
-              <picture>
+              <picture class="user-card-bg">
                 <source
                   srcset="
                     /public/images/explore/background-desk-1x.jpg 1x,
@@ -665,6 +700,7 @@
                   decoding="async"
                 />
               </picture>
+
               <img
                 src="/public/images/explore/user-2-1x-min.png"
                 srcset="
@@ -672,28 +708,37 @@
                   /public/images/explore/user-2-2x-min.png 2x
                 "
                 alt="User avatar"
-                class="avatar-img"
+                class="user-card-avatar"
               />
-              <h3>Cody Fisher</h3>
-              <p>@codyfishe</p>
-              <ul class="user-stats">
-                <li>
-                  <p>356</p>
-                  <h4>Folowers</h4>
-                </li>
-                <li>
-                  <p>456</p>
-                  <h4>Following</h4>
-                </li>
-                <li>
-                  <p>89</p>
-                  <h4>Artworks</h4>
-                </li>
-              </ul>
-              <button class="btn btn-follow">Follow</button>
+
+              <div class="user-card-content">
+                <h3 class="user-card-name">Cody Fisher</h3>
+                <p class="user-card-username">@codyfishe</p>
+
+                <ul class="user-card-stats">
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">356</p>
+                    <h4 class="user-card-stat-label">Folowers</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">456</p>
+                    <h4 class="user-card-stat-label">Following</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">89</p>
+                    <h4 class="user-card-stat-label">Artworks</h4>
+                  </li>
+                </ul>
+
+                <button class="btn btn-follow user-card-follow-btn">
+                  Follow
+                </button>
+              </div>
             </div>
+
+            <!-- CARD 3 -->
             <div class="user-card">
-              <picture>
+              <picture class="user-card-bg">
                 <source
                   srcset="
                     /public/images/explore/background-desk-1x.jpg 1x,
@@ -717,6 +762,7 @@
                   decoding="async"
                 />
               </picture>
+
               <img
                 src="/public/images/explore/user-3-1x-min.png"
                 srcset="
@@ -724,27 +770,42 @@
                   /public/images/explore/user-3-2x-min.png 2x
                 "
                 alt="User avatar"
-                class="avatar-img"
+                class="user-card-avatar"
               />
-              <h3>Jerome Bell</h3>
-              <p>@jeromebt</p>
-              <ul class="user-stats">
-                <li>
-                  <p>546</p>
-                  <h4>Folowers</h4>
-                </li>
-                <li>
-                  <p>789</p>
-                  <h4>Following</h4>
-                </li>
-                <li>
-                  <p>54</p>
-                  <h4>Artworks</h4>
-                </li>
-              </ul>
-              <button class="btn btn-follow">Follow</button>
+
+              <div class="user-card-content">
+                <h3 class="user-card-name">Jerome Bell</h3>
+                <p class="user-card-username">@jeromebt</p>
+
+                <ul class="user-card-stats">
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">546</p>
+                    <h4 class="user-card-stat-label">Folowers</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">789</p>
+                    <h4 class="user-card-stat-label">Following</h4>
+                  </li>
+                  <li class="user-card-stat">
+                    <p class="user-card-stat-number">54</p>
+                    <h4 class="user-card-stat-label">Artworks</h4>
+                  </li>
+                </ul>
+
+                <button class="btn btn-follow user-card-follow-btn">
+                  Follow
+                </button>
+              </div>
             </div>
           </div>
+
+          <!-- Кнопка Explore (з тим самим стилем, що й у попередній секції) -->
+          <button class="main-btn btn btn-explore">
+            Explore
+            <svg class="icon btn-arrow-icon" width="21.53" height="6.41">
+              <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -772,15 +833,17 @@
                 alt="Eleanor-Pena"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Eleanor Pena</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                74875
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Eleanor Pena</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  74875
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -792,19 +855,21 @@
                   /public/images/top-sellers/user-2-1x-min.png 1x,
                   /public/images/top-sellers/user-2-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Savannah-Nguyen"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Savannah Nguyen</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                18599
-              </p>
-              <p class="top-seller-percent top-seller-up">+468.48%</p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Savannah Nguyen</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  18599
+                </p>
+              </div>
+              <p class="top-seller-percent top-seller-down">+468.48%</p>
             </li>
 
             <li class="top-seller-item">
@@ -815,18 +880,20 @@
                   /public/images/top-sellers/user-3-1x-min.png 1x,
                   /public/images/top-sellers/user-3-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Arlene-McCoy"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Arlene McCoy</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                45904
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Arlene McCoy</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  45904
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -838,18 +905,20 @@
                   /public/images/top-sellers/user-4-1x-min.png 1x,
                   /public/images/top-sellers/user-4-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Esther-Howard"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Esther Howard</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                16627
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Esther Howard</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  16627
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -861,18 +930,20 @@
                   /public/images/top-sellers/user-5-1x-min.png 1x,
                   /public/images/top-sellers/user-5-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Robert-Fox"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Robert Fox</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                9631
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Robert Fox</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  9631
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -884,18 +955,20 @@
                   /public/images/top-sellers/user-6-1x-min.png 1x,
                   /public/images/top-sellers/user-6-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Darlene-Robertson"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Darlene Robertson</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                70443
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Darlene Robertson</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  70443
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -907,18 +980,20 @@
                   /public/images/top-sellers/user-7-1x-min.png 1x,
                   /public/images/top-sellers/user-7-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Jacob-Jones"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Jacob Jones</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                13671
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Jacob Jones</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  13671
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -930,18 +1005,20 @@
                   /public/images/top-sellers/user-8-1x-min.png 1x,
                   /public/images/top-sellers/user-8-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Jerome-Bell"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Jerome Bell</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                39235
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Jerome Bell</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  39235
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -953,18 +1030,20 @@
                   /public/images/top-sellers/user-9-1x-min.png 1x,
                   /public/images/top-sellers/user-9-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Wade-Warren"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Wade Warren</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                43359
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Wade Warren</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  43359
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -976,18 +1055,20 @@
                   /public/images/top-sellers/user-10-1x-min.png 1x,
                   /public/images/top-sellers/user-10-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Jane-Cooper"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Jane Cooper</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                95554
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Jane Cooper</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  95554
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -999,18 +1080,20 @@
                   /public/images/top-sellers/user-11-1x-min.png 1x,
                   /public/images/top-sellers/user-11-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Kristin-Watson"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Kristin Watson</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                20796
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Kristin Watson</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  20796
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
 
@@ -1022,25 +1105,27 @@
                   /public/images/top-sellers/user-12-1x-min.png 1x,
                   /public/images/top-sellers/user-12-2x-min.png 2x
                 "
-                alt="Eleanor-Pena"
+                alt="Kathryn-Murphy"
                 class="top-seller-avatar"
               />
-              <h3 class="top-seller-name">Kathryn Murphy</h3>
-              <p class="top-seller-amount">
-                <svg class="top-seller-icon" width="8.47" height="13.76">
-                  <use
-                    href="/public/icons/symbol-defs.svg#icon-main-card"
-                  ></use>
-                </svg>
-                4339
-              </p>
+              <div class="top-seller-content">
+                <h3 class="top-seller-name">Kathryn Murphy</h3>
+                <p class="top-seller-amount">
+                  <svg class="top-seller-icon" width="8.47" height="13.76">
+                    <use
+                      href="/public/icons/symbol-defs.svg#icon-main-card"
+                    ></use>
+                  </svg>
+                  4339
+                </p>
+              </div>
               <p class="top-seller-percent top-seller-up">+468.48%</p>
             </li>
           </ul>
 
           <div class="top-sellers-button-wrapper">
-            <button class="top-sellers-btn desktop-btn">Explore all</button>
-            <button class="top-sellers-btn mobile-btn">
+            <button class="btn top-sellers-btn desktop-btn">Explore all</button>
+            <button class="main-btn btn top-sellers-btn mobile-btn btn-explore">
               Explore
               <svg class="btn-arrow" width="24" height="12">
                 <use href="/icons/symbol-defs.svg#icon-btn-arrow"></use>
@@ -1052,7 +1137,7 @@
 
       <!---------- SUBSCRIBE US  ------------->
       <section class="subscribe">
-        <div class="container">
+        <div class="container subscribe-contaiber">
           <div class="subscribe-top">
             <div class="subscribe-banner">
               <picture>
@@ -1119,7 +1204,6 @@
 
               <form class="subscribe-form" action="#" method="post">
                 <label class="subscribe-label">
-                  <span class="visually-hidden">Your work email address</span>
                   <input
                     type="email"
                     name="email"
@@ -1129,7 +1213,9 @@
                   />
                 </label>
 
-                <button type="submit" class="subscribe-btn">Subscribe</button>
+                <button type="submit" class="btn subscribe-btn">
+                  Subscribe
+                </button>
               </form>
             </div>
 

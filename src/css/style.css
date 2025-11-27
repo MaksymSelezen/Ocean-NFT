@@ -580,10 +580,6 @@ button {
 
 /********** TOP NFTs **********/
 
-.top-nfts {
-  margin-bottom: 108.79px;
-}
-
 .top-nfts-title {
   margin-bottom: 32.36px;
   font-family: 'Orbitron', sans-serif;
@@ -598,6 +594,10 @@ button {
 
 .top-nfts-item {
   margin-bottom: 25px;
+}
+
+.top-nfts-item:last-child {
+  margin-bottom: 0;
 }
 
 .top-nfts-image {
@@ -705,10 +705,773 @@ button {
 
 .btn-explore {
   display: flex;
-  margin: 40px auto 0;
+  margin: 0 auto;
   filter: none;
+}
+
+.top-nfts .btn-explore {
+  margin-top: 40px;
 }
 
 .btn-explore::after {
   background: #241043;
+}
+
+/********** EXPLORE **********/
+
+.explore-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  max-width: 189px;
+
+  margin-top: 108.79px;
+  margin-bottom: 26.21px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 17.86px;
+  row-gap: 17.86px;
+}
+
+.category-item {
+  flex: 0 0 calc((100% - 17.86px) / 2);
+}
+
+.btn-category {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+
+  width: 100%;
+  padding: 13.74px 12.82px 13.74px 12.37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #241043;
+  border-radius: 6px;
+
+  backdrop-filter: blur(114.55054473876953px);
+  border: 1px solid transparent;
+  border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
+
+  cursor: pointer;
+  transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease,
+    border-color 250ms ease;
+}
+
+.btn-category:hover,
+.btn-category:focus-visible {
+  border-radius: 0;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff2df7 0%, #3d86ff 100%);
+  border-image: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 40px rgba(255, 86, 246, 0.6);
+}
+
+.btn-view-all {
+  display: flex;
+  align-items: center;
+  gap: 6.41px;
+
+  margin-top: 17.86px;
+  margin-left: auto;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-view-all .icon-btn-arrow {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.explore-collections-picture {
+  display: block;
+  max-width: 185px;
+  margin: 4px auto 0;
+}
+
+.explore-users-header .explore-title {
+  font-size: 18px;
+  margin-top: 111.66px;
+  margin-bottom: 29.53px;
+}
+
+.explore-users-view-all-btn {
+  display: none;
+}
+
+.user-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-card {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+
+  max-width: 303px;
+}
+
+.user-card-bg {
+  display: block;
+}
+
+.user-card-bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.user-card-avatar {
+  display: block;
+  width: 112.52px;
+  height: 112.52px;
+
+  margin: -56px auto 11.48px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-card-content {
+  padding: 0 24px 28px;
+  text-align: center;
+}
+
+.user-card-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  color: #fff;
+
+  max-width: 134px;
+  margin: 0 auto;
+}
+
+.user-card-username {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2.28571;
+  color: #ffb1ee;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.32px;
+
+  max-width: 66.8px;
+  margin-bottom: 4.83px;
+}
+
+.user-card-check {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.user-card-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card-stat {
+  text-align: center;
+}
+
+.user-card-stat-number {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 2;
+  text-align: center;
+}
+
+.user-card-stat-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 3.2;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.btn-follow {
+  border: 2px solid transparent;
+  border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
+  background: linear-gradient(90deg, #ff2df7 0%, #3d86ff 100%);
+
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+.user-card-follow-btn {
+  display: block;
+
+  margin: 0 auto 0;
+  padding: 8px 52px;
+}
+
+.btn-follow:hover,
+.btn-follow:focus-visible {
+  border-radius: 0;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff2df7 0%, #3d86ff 100%);
+  border-image: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 40px rgba(255, 86, 246, 0.6);
+}
+
+.explore-collections .btn-explore {
+  margin-top: 43px;
+}
+
+/********** TOP SELLERS **********/
+
+.top-sellers-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+  text-align: center;
+
+  margin-top: 108.79px;
+}
+
+.top-sellers-title .highlight {
+  color: #ff56f6;
+}
+
+.top-sellers-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+
+  margin-top: 17px;
+}
+
+.top-sellers-list {
+  margin-top: 37px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.top-seller-item {
+  display: flex;
+  align-items: center;
+  padding: 19.94px 14.7px 19.18px 21.48px;
+  border-radius: 21px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  max-width: 316px;
+}
+
+.top-seller-number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.31579;
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-right: 12.5px;
+}
+
+.top-seller-avatar {
+  max-width: 50.63px;
+  max-height: 50.63px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.top-seller-content {
+  display: flex;
+  flex-direction: column;
+  gap: 11.4px;
+  flex: 1;
+}
+
+.top-seller-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.31;
+  color: #fff;
+  max-width: 115.39px;
+  max-height: 16.62px;
+}
+
+.top-seller-amount {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 3.2;
+  color: rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  max-width: 67.5px;
+  max-height: 13.04px;
+}
+
+.top-seller-icon {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.top-seller-percent {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 12px;
+  border-radius: 13px;
+}
+
+.top-seller-up {
+  color: #0f6;
+  background: rgba(0, 178, 71, 0.15);
+}
+
+.top-seller-down {
+  color: #f00;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 20, 20, 0.15) 0%,
+    rgba(235, 20, 20, 0.15) 100%
+  );
+}
+
+.top-seller-item:nth-child(n + 4) {
+  display: none;
+}
+
+.top-sellers-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.top-sellers .btn-explore {
+  margin-top: 35px;
+  margin-bottom: 108.79px;
+}
+
+.top-sellers-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-sellers-btn.desktop-btn {
+  display: none;
+}
+
+/********** SUBSCRIBE US **********/
+
+.subscribe-contaiber {
+  padding: 0;
+}
+
+.subscribe-top {
+  max-width: 378px;
+  margin: 0 auto;
+}
+
+.subscribe-banner {
+  position: relative;
+}
+
+.subscribe-info-card {
+  margin: -120px 21px 0;
+  padding: 34px 28px 30px 41px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+
+  background: linear-gradient(
+    129deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border-radius: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30.4px);
+  -webkit-backdrop-filter: blur(30.4px);
+  margin-bottom: 108px;
+}
+
+.subscribe-info-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.35;
+  color: #fff;
+  margin-bottom: 10.35px;
+}
+
+.subscribe-info-text {
+  margin: 0 0 26px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.77778;
+  color: #fff;
+  max-width: 267px;
+}
+
+.subscribe-info-actions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.subscribe-info-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.subscribe-info-link:hover,
+.subscribe-info-link:focus {
+  text-decoration: underline;
+}
+
+.subscribe-info-link-video {
+  padding-left: 12px;
+}
+
+.subscribe-info-link-video::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.subscribe-content {
+  max-width: 378px;
+  margin: 0 auto;
+  padding-inline: 25px;
+}
+
+.subscribe-text-block {
+  margin-bottom: 110px;
+}
+
+.subscribe-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+
+  margin: 0 0 18px;
+}
+
+.subscribe-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.77778;
+  color: #fff;
+
+  max-width: 324px;
+  margin: 0 0 33px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subscribe-label {
+  flex: 1 1 auto;
+}
+
+.subscribe-input {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.71429;
+  color: #474a57;
+
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.subscribe-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.42857;
+  color: #fff;
+  text-align: center;
+
+  flex-shrink: 0;
+  width: 95px;
+  height: 32px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+
+  background: linear-gradient(
+    130deg,
+    #ff56f6 18.31%,
+    #b936ee 43.51%,
+    #3bace2 82.46%
+  );
+  box-shadow: 0 3px 77px rgba(255, 86, 246, 0.51);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  opacity: 0.9;
+}
+
+.subscribe-image-wrapper {
+  max-width: 326px;
+  margin: 0 auto;
+}
+
+.subscribe-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 108px;
+}
+
+/********** FOOTER **********/
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Лого + опис + соцмережі */
+.footer-brand {
+  margin-bottom: 32px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.footer-logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff;
+}
+
+.footer-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.71429;
+  color: #d9dbe1;
+
+  margin-top: 31px;
+  max-width: 324px;
+}
+
+/* Соц мережі */
+.footer-social-list {
+  display: flex;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 0;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-icon {
+  display: block;
+}
+
+.footer-nav {
+  margin-top: 16px;
+}
+
+.footer-nav-columns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-column {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.footer-nav-toggle {
+  width: 100%;
+  padding: 18px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-nav-title {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* списки пунктів зараз приховані, відкриватимеш через JS */
+.footer-nav-list {
+  display: none;
+  list-style: none;
+  padding: 0 0 16px;
+  margin: 0;
+}
+
+.footer-nav-item + .footer-nav-item {
+  margin-top: 8px;
+}
+
+.footer-nav-link {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  text-decoration: underline;
+}
+
+/* бейдж “new” поруч із текстом */
+.footer-nav-badge {
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  background: #ff2df7;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* ===== НИЖНЯ ЧАСТИНА ===== */
+
+.footer-bottom {
+  margin-top: 32px;
+  padding-top: 24px;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* посилання знизу */
+.footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* на мобільному ховаємо Sitemap – його немає на макеті */
+.footer-bottom-item:last-child {
+  display: none;
+}
+
+.footer-bottom-link {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom-link:hover,
+.footer-bottom-link:focus {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
 }
