@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "accordion-js": "^3.4.1",
+    "swiper": "^12.0.3"
   }
 }

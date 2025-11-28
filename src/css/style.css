@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'Alethia Next';
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/AlethiaNext-Light.woff2') format('woff2'),
-    url('/fonts/AlethiaNext-Light.woff') format('woff');
-}
-
 html,
 body {
   height: 100%;
@@ -146,7 +137,6 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #fff;
 }
 
 .main-buttons {
@@ -167,7 +157,6 @@ button {
   border-radius: 1px;
   background: transparent;
   outline: none;
-  cursor: pointer;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -327,9 +316,7 @@ button {
 }
 
 .main-img {
-  display: block;
   width: 100%;
-  height: auto;
 }
 
 .main-picture::before {
@@ -592,20 +579,22 @@ button {
   display: none;
 }
 
-.top-nfts-item {
-  margin-bottom: 25px;
+.top-nfts-swiper {
+  overflow: visible;
 }
 
-.top-nfts-item:last-child {
+.top-nfts-item {
+  width: 303px;
   margin-bottom: 0;
 }
 
 .top-nfts-image {
-  max-width: 303px;
+  width: 100%;
 }
 
 .card-top {
-  max-width: 303px;
+  width: 100%;
+  max-width: none;
   padding: 24.87px 19px 18px 21.22px;
   border-radius: 0;
 }
@@ -649,36 +638,26 @@ button {
 }
 
 .card-top .card-value {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
   font-size: 7px;
-  color: #fff;
 }
 
 .card-top .card-value-span {
   font-size: 8px;
-  line-height: 3.2;
 }
 
 .card-top .card-timer-label {
   width: 62.99px;
   height: 32px;
-  font-weight: 600;
   font-size: 8px;
-  line-height: 3.2;
 }
 
 .card-top .card-counter-number {
-  font-weight: 600;
   font-size: 13px;
-  line-height: 2;
 }
 
 .card-top .card-counter-text {
   margin-bottom: 18px;
-  font-weight: 500;
   font-size: 8px;
-  line-height: 3.2;
 }
 
 .card-top .btn-card {
@@ -703,6 +682,10 @@ button {
   height: 32px;
 }
 
+.top-nfts-swiper .swiper-pagination {
+  display: none;
+}
+
 .btn-explore {
   display: flex;
   margin: 0 auto;
@@ -723,9 +706,7 @@ button {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 16px;
-
   max-width: 189px;
-
   margin-top: 108.79px;
   margin-bottom: 26.21px;
 }
@@ -747,22 +728,16 @@ button {
   font-size: 10px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-
   width: 100%;
   padding: 13.74px 12.82px 13.74px 12.37px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #241043;
   border-radius: 6px;
-
   backdrop-filter: blur(114.55054473876953px);
   border: 1px solid transparent;
   border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
-
-  cursor: pointer;
   transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease,
     border-color 250ms ease;
 }
@@ -781,20 +756,16 @@ button {
   display: flex;
   align-items: center;
   gap: 6.41px;
-
   margin-top: 17.86px;
   margin-left: auto;
-
   padding: 0;
   border: none;
   background: transparent;
-
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
 }
 
 .btn-view-all .icon-btn-arrow {
@@ -818,24 +789,26 @@ button {
   display: none;
 }
 
-.user-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.explore-users-swiper {
+  margin-top: 0;
+  overflow: visible;
+}
+
+.explore-users-swiper .swiper-slide {
+  width: 303px;
 }
 
 .user-card {
   position: relative;
+  width: 303px;
+  max-width: 303px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
-
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.06) 0%,
     rgba(255, 255, 255, 0.01) 100%
   );
-
-  max-width: 303px;
 }
 
 .user-card-bg {
@@ -843,18 +816,14 @@ button {
 }
 
 .user-card-bg img {
-  display: block;
   width: 100%;
-  height: auto;
 }
 
 .user-card-avatar {
   display: block;
   width: 112.52px;
   height: 112.52px;
-
   margin: -56px auto 11.48px;
-
   border-radius: 50%;
   object-fit: cover;
 }
@@ -868,25 +837,19 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
-  color: #fff;
-
   max-width: 134px;
   margin: 0 auto;
 }
 
 .user-card-username {
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 2.28571;
   color: #ffb1ee;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 1.32px;
-
   max-width: 66.8px;
   margin-bottom: 4.83px;
 }
@@ -894,16 +857,12 @@ button {
 .user-card-check {
   width: 14px;
   height: 14px;
-  display: block;
 }
 
 .user-card-stats {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px;
-
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .user-card-stat {
@@ -930,8 +889,6 @@ button {
   border: 2px solid transparent;
   border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
   background: linear-gradient(90deg, #ff2df7 0%, #3d86ff 100%);
-
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   font-size: 13px;
   text-align: center;
@@ -940,8 +897,7 @@ button {
 
 .user-card-follow-btn {
   display: block;
-
-  margin: 0 auto 0;
+  margin: 0 auto;
   padding: 8px 52px;
 }
 
@@ -967,7 +923,6 @@ button {
   font-size: 19px;
   color: #fff;
   text-align: center;
-
   margin-top: 108.79px;
 }
 
@@ -982,17 +937,14 @@ button {
   line-height: 1.4;
   text-align: center;
   color: #fff;
-
   margin-top: 17px;
 }
 
 .top-sellers-list {
-  margin-top: 37px;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin-top: 37px;
 }
 
 .top-seller-item {
@@ -1000,7 +952,6 @@ button {
   align-items: center;
   padding: 19.94px 14.7px 19.18px 21.48px;
   border-radius: 21px;
-
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   max-width: 316px;
@@ -1012,7 +963,6 @@ button {
   font-size: 13px;
   line-height: 2.31579;
   color: rgba(255, 255, 255, 0.8);
-
   margin-right: 12.5px;
 }
 
@@ -1047,11 +997,9 @@ button {
   font-size: 9px;
   line-height: 3.2;
   color: rgba(255, 255, 255, 0.8);
-
   display: flex;
   align-items: center;
   gap: 3px;
-
   max-width: 67.5px;
   max-height: 13.04px;
 }
@@ -1065,11 +1013,9 @@ button {
   font-weight: 500;
   font-size: 10px;
   line-height: 1;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 5px 12px;
   border-radius: 13px;
 }
@@ -1128,13 +1074,11 @@ button {
 }
 
 .subscribe-info-card {
-  margin: -120px 21px 0;
+  margin: -120px 21px 108px;
   padding: 34px 28px 30px 41px;
   box-sizing: border-box;
-
   color: #ffffff;
   font-family: 'Rajdhani', sans-serif;
-
   background: linear-gradient(
     129deg,
     rgba(255, 255, 255, 0.18) 0%,
@@ -1144,7 +1088,6 @@ button {
   border: 2px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(30.4px);
   -webkit-backdrop-filter: blur(30.4px);
-  margin-bottom: 108px;
 }
 
 .subscribe-info-title {
@@ -1176,7 +1119,6 @@ button {
   position: relative;
   display: inline-flex;
   align-items: center;
-
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 10px;
@@ -1199,7 +1141,6 @@ button {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-
   width: 0;
   height: 0;
   border-style: solid;
@@ -1222,7 +1163,6 @@ button {
   font-weight: 700;
   font-size: 26px;
   color: #fff;
-
   margin: 0 0 18px;
 }
 
@@ -1232,7 +1172,6 @@ button {
   font-size: 13px;
   line-height: 1.77778;
   color: #fff;
-
   max-width: 324px;
   margin: 0 0 33px;
 }
@@ -1253,7 +1192,6 @@ button {
   font-size: 10px;
   line-height: 1.71429;
   color: #474a57;
-
   width: 100%;
   height: 32px;
   padding: 8px 12px;
@@ -1273,14 +1211,11 @@ button {
   line-height: 1.42857;
   color: #fff;
   text-align: center;
-
   flex-shrink: 0;
   width: 95px;
   height: 32px;
   border-radius: 0 4px 4px 0;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-
   background: linear-gradient(
     130deg,
     #ff56f6 18.31%,
@@ -1301,9 +1236,7 @@ button {
 }
 
 .subscribe-image {
-  display: block;
   width: 100%;
-  height: auto;
   border-radius: 4px;
   margin-bottom: 108px;
 }
@@ -1335,7 +1268,6 @@ button {
   font-size: 15px;
   line-height: 1.71429;
   color: #d9dbe1;
-
   margin-top: 31px;
   max-width: 324px;
 }
@@ -1343,9 +1275,7 @@ button {
 .footer-social-list {
   display: flex;
   gap: 18px;
-  margin-top: 26px;
-  margin-bottom: 50px;
-  padding: 0;
+  margin: 26px 0 50px;
 }
 
 .footer-social-link {
@@ -1391,7 +1321,13 @@ button {
 }
 
 .footer-nav-list {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.footer-nav-column.is-open-footer-section .footer-nav-list {
+  max-height: 500px;
 }
 
 .footer-nav-item + .footer-nav-item {
@@ -1411,12 +1347,11 @@ button {
 }
 
 .footer-nav-badge {
-  margin-left: 6px;
-  padding: 2px 6px;
-  border-radius: 12px;
-  background: #ff2df7;
-  font-size: 10px;
-  text-transform: uppercase;
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2ec5ce;
 }
 
 .footer-bottom-inner {
@@ -1433,7 +1368,6 @@ button {
   font-size: 15px;
   line-height: 1.71429;
   color: #d9dbe1;
-
   display: flex;
   justify-content: center;
   gap: 33.4px;
