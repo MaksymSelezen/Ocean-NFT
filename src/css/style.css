@@ -1315,11 +1315,6 @@ button {
   flex-direction: column;
 }
 
-/* Лого + опис + соцмережі */
-.footer-brand {
-  margin-bottom: 32px;
-}
-
 .footer-logo {
   display: inline-flex;
   align-items: center;
@@ -1345,11 +1340,11 @@ button {
   max-width: 324px;
 }
 
-/* Соц мережі */
 .footer-social-list {
   display: flex;
   gap: 18px;
   margin-top: 26px;
+  margin-bottom: 50px;
   padding: 0;
 }
 
@@ -1359,47 +1354,44 @@ button {
   align-items: center;
 }
 
-.footer-social-icon {
-  display: block;
-}
-
-.footer-nav {
-  margin-top: 16px;
-}
-
-.footer-nav-columns {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .footer-nav-column {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 16px 0 17px;
+}
+
+.footer-nav-column:first-child {
+  padding-top: 0;
+}
+
+.footer-nav-column:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .footer-nav-toggle {
   width: 100%;
-  padding: 18px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: transparent;
   border: none;
-  cursor: pointer;
+  padding: 0 23px 0 0;
 }
 
 .footer-nav-title {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.55556;
+  color: #fff;
 }
 
-/* списки пунктів зараз приховані, відкриватимеш через JS */
+.footer-nav-arrow {
+  fill: rgba(255, 255, 255, 0.54);
+}
+
 .footer-nav-list {
   display: none;
-  list-style: none;
-  padding: 0 0 16px;
-  margin: 0;
 }
 
 .footer-nav-item + .footer-nav-item {
@@ -1418,7 +1410,6 @@ button {
   text-decoration: underline;
 }
 
-/* бейдж “new” поруч із текстом */
 .footer-nav-badge {
   margin-left: 6px;
   padding: 2px 6px;
@@ -1428,31 +1419,27 @@ button {
   text-transform: uppercase;
 }
 
-/* ===== НИЖНЯ ЧАСТИНА ===== */
-
-.footer-bottom {
-  margin-top: 32px;
-  padding-top: 24px;
-}
-
 .footer-bottom-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 38.5px;
+  padding-bottom: 97.5px;
 }
 
-/* посилання знизу */
 .footer-bottom-links {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.71429;
+  color: #d9dbe1;
+
   display: flex;
   justify-content: center;
-  gap: 32px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 33.4px;
+  margin-top: 40px;
 }
 
-/* на мобільному ховаємо Sitemap – його немає на макеті */
 .footer-bottom-item:last-child {
   display: none;
 }
@@ -1470,8 +1457,9 @@ button {
 }
 
 .footer-copy {
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.71429;
+  color: #d9dbe1;
 }
