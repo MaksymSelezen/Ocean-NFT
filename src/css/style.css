@@ -107,6 +107,10 @@ button {
 
 /********** MAIN **********/
 
+.main {
+  padding-bottom: 108.21px;
+}
+
 .main-content {
   padding-top: 40px;
 }
@@ -117,7 +121,6 @@ button {
   font-size: 42px;
   line-height: 1.374;
   color: #fff;
-
   max-width: 291px;
   margin-bottom: 40px;
   padding-left: 5px;
@@ -135,8 +138,6 @@ button {
   padding-left: 5px;
   font-weight: 400;
   font-size: 14px;
-  /* line-height: 1.7; */
-
   max-width: 315px;
   margin-bottom: 40px;
 }
@@ -299,7 +300,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 108.21px;
 }
 
 .main-picture {
@@ -704,11 +704,14 @@ button {
 
 /********** EXPLORE **********/
 
+.explore-collections {
+  padding-top: 108.79px;
+}
+
 .explore-title {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  margin-top: 108.79px;
   margin-bottom: 26.21px;
 }
 
@@ -729,18 +732,14 @@ button {
   font-size: 10px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-
   width: 100%;
   padding: 13.74px 12.82px 13.74px 12.37px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #241043;
   border-radius: 6px;
   backdrop-filter: blur(114.55054473876953px);
-
   border: 1px solid transparent;
   border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
   transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease,
@@ -762,7 +761,6 @@ button {
   font-weight: 700;
   font-size: 8px;
   color: #fff;
-
   display: flex;
   align-items: center;
   gap: 6.41px;
@@ -849,14 +847,11 @@ button {
 .user-card-username {
   font-weight: 400;
   font-size: 13px;
-  /* line-height: 2.28571; */
   color: #ffb1ee;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   max-width: 66.8px;
   margin-bottom: 10px;
 }
@@ -886,7 +881,6 @@ button {
 .user-card-stat-label {
   font-weight: 500;
   font-size: 13px;
-  /* line-height: 3.2; */
   text-align: center;
   color: #fff;
   opacity: 0.7;
@@ -925,13 +919,17 @@ button {
 
 /********** TOP SELLERS **********/
 
+.top-sellers {
+  padding-top: 108.79px;
+  padding-bottom: 108.79px;
+}
+
 .top-sellers-title {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 19px;
   color: #fff;
   text-align: center;
-  margin-top: 108.79px;
 }
 
 .top-sellers-title .highlight {
@@ -1053,7 +1051,6 @@ button {
 
 .top-sellers .btn-explore {
   margin-top: 35px;
-  margin-bottom: 108.79px;
 }
 
 .top-sellers-btn {
@@ -1067,6 +1064,10 @@ button {
 }
 
 /********** SUBSCRIBE US **********/
+
+.subscribe {
+  padding-bottom: 108px;
+}
 
 .subscribe-contaiber {
   padding: 0;
@@ -1082,7 +1083,7 @@ button {
 }
 
 .subscribe-info-card {
-  margin: -120px 21px 108px;
+  margin: -180px 21px 110px;
   padding: 34px 28px 30px 41px;
   box-sizing: border-box;
   color: #ffffff;
@@ -1190,19 +1191,18 @@ button {
   gap: 6px;
 }
 
-.subscribe-label {
-  flex: 1 1 auto;
-}
-
 .subscribe-input {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71429;
   color: #474a57;
-  width: 100%;
-  height: 32px;
-  padding: 8px 12px;
+
+  max-width: 180px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 40px;
   border-radius: 4px 0 0 4px;
   border: none;
   outline: none;
@@ -1246,7 +1246,6 @@ button {
 .subscribe-image {
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 108px;
 }
 
 /********** FOOTER **********/
@@ -1254,6 +1253,22 @@ button {
 .footer-inner {
   display: flex;
   flex-direction: column;
+
+  position: relative;
+
+  padding-top: 35px;
+}
+
+.footer-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 324px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .footer-logo {
@@ -1379,7 +1394,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 33.4px;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .footer-bottom-item:last-child {
@@ -1387,10 +1402,11 @@ button {
 }
 
 .footer-bottom-link {
-  font-size: 13px;
-  line-height: 1.4;
-  color: #ffffff;
-  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.71429;
+  color: #d9dbe1;
 }
 
 .footer-bottom-link:hover,
