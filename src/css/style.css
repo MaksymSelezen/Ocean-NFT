@@ -49,6 +49,14 @@ button {
   padding-inline: 25px;
 }
 
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+}
+
 /********** HEADER **********/
 
 .header-inner {
@@ -105,13 +113,64 @@ button {
   fill: #fff;
 }
 
+/*! ===== HEADER DESKTOP 1600px ===== */
+@media (min-width: 1600px) {
+  .header-inner {
+    padding: 53px 112px 0 114px;
+  }
+
+  .header-logo-icon {
+    width: 16.58px;
+    height: 26.81px;
+  }
+
+  .header-logo-text {
+    font-size: 19px;
+  }
+
+  .header-nav,
+  .header-actions {
+    display: flex;
+  }
+
+  .header-burger {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+    column-gap: 66px;
+  }
+
+  .header-nav-link {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .header-actions {
+    margin-left: 270px;
+    column-gap: 40px;
+  }
+
+  .header-action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-cart,
+  .header-user {
+    display: block;
+    fill: #fff;
+  }
+}
+
 /********** MAIN **********/
 
 .main {
   padding-bottom: 108.21px;
-}
-
-.main-content {
   padding-top: 40px;
 }
 
@@ -567,6 +626,172 @@ button {
   fill: currentColor;
 }
 
+/*! ===== MAIN DESKTOP 1600px ===== */
+@media (min-width: 1600px) {
+  .main {
+    padding-top: 105px;
+    padding-bottom: 216px;
+  }
+
+  .main-inner {
+    position: relative;
+    display: block;
+  }
+
+  .main-title {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 66px;
+
+    max-width: 800px;
+    margin-bottom: 25px;
+    padding-left: 0;
+
+    letter-spacing: 2.5px;
+  }
+
+  .main-text {
+    font-size: 26px;
+    line-height: 1.66667;
+
+    max-width: 656px;
+    margin-bottom: 50px;
+  }
+
+  .main-buttons {
+    margin-bottom: 68.57px;
+    padding-left: 0px;
+    gap: 38px;
+  }
+
+  .main-btn {
+    font-size: 19px;
+    padding: 20px 38px 19px 68px;
+    gap: 11px;
+  }
+
+  .btn-arrow-icon {
+    width: 52px;
+    height: 15px;
+  }
+
+  .btn-secondary {
+    font-size: 19px;
+  }
+
+  .main-stats-list {
+    padding-left: 0px;
+    gap: 55px;
+    margin-bottom: 0;
+  }
+
+  .main-stats-item {
+    position: relative;
+    padding-right: 15px;
+  }
+
+  .main-stats-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 63px;
+    background-color: rgba(255, 255, 255, 0.26);
+  }
+
+  .main-stats-title {
+    font-size: 39px;
+    line-height: 1.33333;
+  }
+
+  .main-stats-text {
+    font-family: 'Alethia Next', sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+
+  .main-media {
+    position: absolute;
+    top: 20px;
+    right: 193px;
+    display: block;
+  }
+
+  .main-picture {
+    max-width: 402px;
+  }
+
+  .card {
+    max-width: 336px;
+    width: 336px;
+  }
+
+  .card-main {
+    position: absolute;
+    left: 80%;
+
+    transform: translateX(-50%);
+    bottom: -70px;
+  }
+
+  .main-icons {
+    margin-top: 122px;
+    padding-left: 0;
+  }
+
+  .partners-item:nth-child(1) .partners-icon {
+    width: 265px;
+    height: auto;
+  }
+
+  .partners-item:nth-child(2) .partners-icon {
+    width: 170px;
+    height: auto;
+  }
+
+  .partners-item:nth-child(3) .partners-icon {
+    width: 349px;
+    height: auto;
+  }
+
+  .partners-item:nth-child(4) .partners-icon {
+    width: 200px;
+    height: auto;
+  }
+
+  .partners-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+    margin-bottom: 0;
+  }
+
+  .partners-item {
+    flex: 0 0 auto;
+    justify-content: flex-start;
+  }
+
+  .card-name {
+    font-size: 15px;
+  }
+
+  .card-price-label {
+    font-size: 11px;
+    width: 60.8px;
+  }
+
+  .card-timer-label {
+    font-size: 11px;
+    width: 70px;
+  }
+}
+
 /********** TOP NFTs **********/
 
 .top-nfts-title {
@@ -915,6 +1140,58 @@ button {
 
 .explore-collections .btn-explore {
   margin-top: 43px;
+}
+
+/*! ===== TOP NFT's – DESKTOP 1600px ===== */
+@media (min-width: 1600px) {
+  .top-nfts-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-nfts-title {
+    font-size: 26px;
+    margin-bottom: 47px;
+  }
+
+  .top-nfts-view-all {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+
+    display: inline-flex;
+    gap: 17px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .top-nfts-arrow {
+    display: block;
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+
+  .top-nfts-swiper {
+    overflow: visible;
+  }
+
+  .top-nfts-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    transform: none !important;
+  }
+
+  .top-nfts-item {
+    flex: 0 0 303px;
+    margin-bottom: 0;
+  }
+
+  .top-nfts-swiper .swiper-pagination {
+    display: none;
+  }
 }
 
 /********** TOP SELLERS **********/
