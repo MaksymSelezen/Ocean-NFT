@@ -108,18 +108,19 @@ button {
 /********** MAIN **********/
 
 .main-content {
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .main-title {
-  max-width: 291px;
-  margin-bottom: 40px;
-  padding-left: 5px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.374;
   color: #fff;
+
+  max-width: 291px;
+  margin-bottom: 40px;
+  padding-left: 5px;
 }
 
 .main-title-accent {
@@ -131,12 +132,13 @@ button {
 }
 
 .main-text {
-  max-width: 315px;
-  margin-bottom: 40px;
   padding-left: 5px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  /* line-height: 1.7; */
+
+  max-width: 315px;
+  margin-bottom: 40px;
 }
 
 .main-buttons {
@@ -276,7 +278,7 @@ button {
   flex-wrap: wrap;
   column-gap: 25px;
   row-gap: 30px;
-  margin-bottom: 58.38px;
+  margin-bottom: 50px;
 }
 
 .partners-item {
@@ -706,7 +708,6 @@ button {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  max-width: 189px;
   margin-top: 108.79px;
   margin-bottom: 26.21px;
 }
@@ -728,14 +729,18 @@ button {
   font-size: 10px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
+
   width: 100%;
   padding: 13.74px 12.82px 13.74px 12.37px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: #241043;
   border-radius: 6px;
   backdrop-filter: blur(114.55054473876953px);
+
   border: 1px solid transparent;
   border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
   transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease,
@@ -753,6 +758,11 @@ button {
 }
 
 .btn-view-all {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  color: #fff;
+
   display: flex;
   align-items: center;
   gap: 6.41px;
@@ -761,11 +771,6 @@ button {
   padding: 0;
   border: none;
   background: transparent;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  color: #ffffff;
 }
 
 .btn-view-all .icon-btn-arrow {
@@ -823,7 +828,7 @@ button {
   display: block;
   width: 112.52px;
   height: 112.52px;
-  margin: -56px auto 11.48px;
+  margin: -60px auto 0px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -844,14 +849,16 @@ button {
 .user-card-username {
   font-weight: 400;
   font-size: 13px;
-  line-height: 2.28571;
+  /* line-height: 2.28571; */
   color: #ffb1ee;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 1.32px;
+  gap: 10px;
+
   max-width: 66.8px;
-  margin-bottom: 4.83px;
+  margin-bottom: 10px;
 }
 
 .user-card-check {
@@ -879,10 +886,11 @@ button {
 .user-card-stat-label {
   font-weight: 500;
   font-size: 13px;
-  line-height: 3.2;
+  /* line-height: 3.2; */
   text-align: center;
   color: #fff;
   opacity: 0.7;
+  margin-bottom: 7px;
 }
 
 .btn-follow {
@@ -898,7 +906,7 @@ button {
 .user-card-follow-btn {
   display: block;
   margin: 0 auto;
-  padding: 8px 52px;
+  padding: 8px 60px;
 }
 
 .btn-follow:hover,
@@ -944,7 +952,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 37px;
+  margin-top: 25px;
 }
 
 .top-seller-item {
@@ -1034,7 +1042,7 @@ button {
   );
 }
 
-.top-seller-item:nth-child(n + 4) {
+.top-seller-item:nth-child(n + 5) {
   display: none;
 }
 
