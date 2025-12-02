@@ -865,21 +865,33 @@ button {
 }
 
 .card-top .card-value {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
   font-size: 7px;
+  color: #fff;
 }
 
 .card-top .card-value-span {
+  font-weight: 400;
   font-size: 8px;
+
+  opacity: 0.7;
 }
 
 .card-top .card-timer-label {
+  font-weight: 600;
+  line-height: 3.2;
   width: 62.99px;
   height: 32px;
   font-size: 8px;
 }
 
 .card-top .card-counter-number {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
   font-size: 13px;
+
+  color: #fff;
 }
 
 .card-top .card-counter-text {
@@ -925,6 +937,146 @@ button {
 
 .btn-explore::after {
   background: #241043;
+}
+
+/*! ===== TOP NFT's – DESKTOP 1600px ===== */
+@media (min-width: 1600px) {
+  .top-nfts-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-top {
+    padding: 36px 27px 26px 31px;
+  }
+
+  .top-nfts-title {
+    font-size: 26px;
+    margin-bottom: 47px;
+  }
+
+  .top-nfts-view-all {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+
+    display: inline-flex;
+    gap: 17px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .top-nfts-arrow {
+    display: block;
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+
+  .top-nfts-swiper {
+    overflow: visible;
+  }
+
+  .top-nfts-list {
+    display: flex;
+    gap: 35px;
+    transform: none;
+  }
+
+  .top-nfts-item {
+    flex: 0 0 437px;
+    width: 437px;
+    margin-bottom: 0;
+  }
+
+  .top-nfts-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .top-nfts-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-top {
+    width: 100%;
+  }
+
+  .top-nfts-swiper .swiper-pagination {
+    display: none;
+  }
+
+  .top-nfts-swiper .swiper-pagination {
+    display: none;
+  }
+
+  .card-top .card-title {
+    font-size: 23px;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 3px;
+  }
+
+  .card-top .card-avatar {
+    width: 37px;
+    height: 37px;
+    margin-right: 4px;
+  }
+
+  .card-top .card-name {
+    font-size: 20px;
+
+    width: 96.48px;
+  }
+
+  .card-top .card-price-label {
+    font-size: 14px;
+    width: 79px;
+    height: 46px;
+  }
+
+  .card-top .card-price-icon {
+    width: 14.24px;
+    height: 23.19px;
+  }
+
+  .card-top .card-value {
+    font-size: 12px;
+  }
+
+  .card-top .card-value-span {
+    font-size: 14px;
+  }
+
+  .card-top .card-timer-label {
+    font-weight: 600;
+    font-size: 14px;
+    width: 90.72px;
+    height: 46.08px;
+  }
+
+  .card-top .card-counter-number {
+    font-size: 23px;
+  }
+
+  .card-top .card-counter-text {
+    font-size: 14px;
+  }
+
+  .card-top .btn-card {
+    padding: 10px 12px 10px 13px;
+    border-radius: 0;
+    gap: 13px;
+    font-size: 23px;
+    margin-top: 26px;
+  }
+  .btn-explore {
+    display: none;
+  }
 }
 
 /********** EXPLORE **********/
@@ -1142,55 +1294,157 @@ button {
   margin-top: 43px;
 }
 
-/*! ===== TOP NFT's – DESKTOP 1600px ===== */
+/*! ********** EXPLORE – DESKTOP 1600px ********** */
+
 @media (min-width: 1600px) {
-  .top-nfts-header {
-    display: flex;
-    justify-content: space-between;
+  .explore-collections {
+    padding-top: 209px;
   }
 
-  .top-nfts-title {
+  .explore-collections .container {
+    position: relative;
+  }
+
+  .explore-title {
     font-size: 26px;
     margin-bottom: 47px;
   }
 
-  .top-nfts-view-all {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
+  .category-list {
+    max-width: 780px;
+    column-gap: 43.11px;
+    row-gap: 43.11px;
+  }
+
+  .category-item {
+    flex: 0 0 calc((100% - 43.11px) / 2);
+  }
+
+  .btn-category {
     font-size: 26px;
-    color: #fff;
+    padding: 33px 31px 33px 30px;
+  }
 
-    display: inline-flex;
+  .btn-view-all {
+    font-size: 19px;
+    margin-top: 54px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 17px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
   }
 
-  .top-nfts-arrow {
-    display: block;
-    fill: #ffffff;
-    stroke: #ffffff;
+  .btn-view-all .icon-btn-arrow {
+    width: 52px;
+    height: 15px;
   }
 
-  .top-nfts-swiper {
+  .explore-collections-picture {
+    position: absolute;
+    top: -50px;
+    right: 150px;
+    max-width: none;
+    margin: 0;
+  }
+
+  .explore-collections-img {
+    width: 435.55px;
+    height: auto;
+  }
+
+  .explore-users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 260px;
+    margin-bottom: 47px;
+  }
+
+  .explore-users-header .explore-title {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .explore-users-view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .explore-users-view-all-btn .icon-btn-arrow {
+    width: 52px;
+    height: 15px;
+  }
+
+  .explore-users-swiper {
     overflow: visible;
   }
 
-  .top-nfts-list {
+  .explore-users-swiper .user-cards {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    transform: none !important;
+    gap: 35px;
+    transform: none;
   }
 
-  .top-nfts-item {
-    flex: 0 0 303px;
-    margin-bottom: 0;
+  .explore-users-swiper .swiper-slide {
+    width: auto;
+    flex: 0 0 437px;
   }
 
-  .top-nfts-swiper .swiper-pagination {
-    display: none;
+  .user-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .user-card-bg img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .user-card-avatar {
+    width: 162.5px;
+    height: 162.5px;
+    margin-top: -100px;
+  }
+
+  .user-card-name {
+    font-size: 24px;
+    max-width: 193.5px;
+  }
+
+  .user-card-username {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  .user-card-check {
+    width: 15.84px;
+    height: 17.28px;
+  }
+
+  .user-card-stat-number {
+    font-size: 31px;
+  }
+
+  .user-card-stat-label {
+    font-size: 19px;
+  }
+
+  .user-card-follow-btn {
+    padding: 11px 95px;
+    font-size: 19px;
+    margin-top: 35px;
+  }
+
+  .explore-collections .btn-explore {
+    margin-top: 64px;
   }
 }
 
@@ -1340,6 +1594,111 @@ button {
   display: none;
 }
 
+/*! ********** TOP SELLERS – DESKTOP 1600px ********** */
+
+@media (min-width: 1600px) {
+  .top-sellers {
+    padding-top: 170px;
+    padding-bottom: 160px;
+  }
+
+  .top-sellers-title {
+    font-size: 26px;
+  }
+
+  .top-sellers-text {
+    max-width: 840px;
+    margin: 24px auto 0;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 506px;
+  }
+
+  .top-sellers-list {
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px 35px;
+  }
+
+  .top-seller-item {
+    width: 437px;
+    max-height: 123px;
+    max-width: none;
+    padding: 35px 20px 26px 30px;
+    border-radius: 32px;
+  }
+
+  .top-seller-number {
+    font-size: 19px;
+    margin-right: 17px;
+  }
+
+  .top-seller-avatar {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 13px;
+  }
+
+  .top-seller-content {
+    gap: 8px;
+  }
+
+  .top-seller-name {
+    font-size: 19px;
+    line-height: 1.4;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .top-seller-amount {
+    font-size: 13px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .top-seller-percent {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .top-seller-item:nth-child(n + 5) {
+    display: flex;
+  }
+
+  .top-sellers-button-wrapper {
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+
+  .top-sellers-btn.desktop-btn {
+    display: inline-flex;
+    padding: 11px 75px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(310deg, #ff2df7 0%, #3d86ff 100%) 1;
+    background: linear-gradient(90deg, #ff2df7 0%, #3d86ff 100%);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .top-sellers-btn.desktop-btn:hover,
+  .top-sellers-btn.desktop-btn:focus-visible {
+    border-radius: 0;
+    border-image: none;
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 40px rgba(255, 86, 246, 0.6);
+  }
+
+  .top-sellers-btn.mobile-btn {
+    display: none;
+  }
+}
+
 /********** SUBSCRIBE US **********/
 
 .subscribe {
@@ -1430,7 +1789,7 @@ button {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 6px 0 6px 10px;
+  border-width: 8px 0 6px 11px;
   border-color: transparent transparent transparent #ffffff;
 }
 
@@ -1500,7 +1859,7 @@ button {
   width: 95px;
   height: 32px;
   border-radius: 0 4px 4px 0;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   background: linear-gradient(
     130deg,
     #ff56f6 18.31%,
@@ -1523,6 +1882,115 @@ button {
 .subscribe-image {
   width: 100%;
   border-radius: 4px;
+}
+
+/*! ===== SUBSCRIBE – DESKTOP 1600px ===== */
+
+@media (min-width: 1600px) {
+  .subscribe {
+    padding-bottom: 160px;
+  }
+
+  .subscribe-top {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .subscribe-banner {
+    position: relative;
+  }
+
+  .subscribe-info-card {
+    position: absolute;
+    top: 220px;
+    right: 140px;
+    width: 577px;
+    margin: 0;
+    padding: 56px 48px 50px 71px;
+  }
+
+  .subscribe-info-title {
+    font-size: 44px;
+    margin-bottom: 17px;
+  }
+
+  .subscribe-info-text {
+    max-width: 458px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .subscribe-info-actions {
+    gap: 50px;
+  }
+
+  .subscribe-info-link {
+    font-size: 17px;
+  }
+
+  .subscribe-info-link-video {
+    padding-left: 21px;
+  }
+
+  .subscribe-content {
+    max-width: 1382px;
+    margin: 293px auto 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .subscribe-image-wrapper {
+    order: 1;
+    flex: 0 0 50%;
+    max-width: 698px;
+    margin: 0;
+  }
+
+  .subscribe-image {
+    max-width: 699px;
+    max-height: 290px;
+    object-fit: cover;
+    border-radius: 2px 0 0 2px;
+    display: block;
+  }
+
+  .subscribe-text-block {
+    order: 2;
+    flex: 1;
+    margin-bottom: 0;
+    padding: 35px 0 0 80px;
+  }
+
+  .subscribe-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .subscribe-text {
+    max-width: 490px;
+    font-size: 19px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+  }
+
+  .subscribe-form {
+    gap: 9px;
+    max-width: 490px;
+  }
+
+  .subscribe-input {
+    max-width: none;
+    padding: 13px 60px 13px 18px;
+    font-size: 15px;
+  }
+
+  .subscribe-btn {
+    font-size: 15px;
+    width: 145px;
+    height: 50px;
+  }
 }
 
 /********** FOOTER **********/
