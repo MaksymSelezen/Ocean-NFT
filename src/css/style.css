@@ -2141,7 +2141,6 @@ button {
     padding: 102px 0 86px;
   }
 
-  /* горизонтальні лінії по 1339px */
   .footer-inner::before,
   .footer-inner::after {
     left: 47%;
