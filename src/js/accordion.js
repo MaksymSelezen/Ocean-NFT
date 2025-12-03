@@ -1,22 +1,62 @@
-// src/js/footer-accordion.js
 import Accordion from 'accordion-js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // якщо раптом футера на сторінці немає – просто нічого не робимо
   const footerNav = document.querySelector('.footer-nav-columns');
   if (!footerNav) return;
 
-  new Accordion('.footer-nav-columns', {
-    duration: 300, // швидкість анімації
-    ariaEnabled: true, // ARIA-атрибути
-    collapse: true, // можна закривати відкриту секцію
-    showMultiple: false, // відкритою буде тільки одна секція
-    onlyChildNodes: true, // беремо тільки прямі дочірні елементи
+  let footerAccordion = null;
+  const DESKTOP_BREAKPOINT = 1600;
 
-    // ПІДСТАВЛЯЄМО ТВОЇ КЛАСИ З HTML
-    elementClass: 'footer-nav-column', // <li class="footer-nav-column">
-    triggerClass: 'footer-nav-toggle', // <button class="footer-nav-toggle">
-    panelClass: 'footer-nav-list', // <ul class="footer-nav-list">
-    activeClass: 'is-open-footer-section', // ДОДАТКОВИЙ клас для відкритої секції
-  });
+  const enableAccordion = () => {
+    if (!footerAccordion) {
+      footerAccordion = new Accordion('.footer-nav-columns', {
+        duration: 300,
+        ariaEnabled: true,
+        collapse: true,
+        showMultiple: false,
+        onlyChildNodes: true,
+        elementClass: 'footer-nav-column',
+        triggerClass: 'footer-nav-toggle',
+        panelClass: 'footer-nav-list',
+        activeClass: 'is-open-footer-section',
+      });
+    }
+  };
+
+  const disableAccordion = () => {
+    if (footerAccordion) {
+      footerAccordion.destroy();
+      footerAccordion = null;
+    }
+
+    const columns = footerNav.querySelectorAll('.footer-nav-column');
+
+    columns.forEach(column => {
+      column.classList.remove('is-open-footer-section');
+
+      const panel = column.querySelector('.footer-nav-list');
+      if (panel) {
+        panel.style.maxHeight = '';
+        panel.style.display = '';
+        panel.hidden = false;
+      }
+
+      const trigger = column.querySelector('.footer-nav-toggle');
+      if (trigger) {
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  };
+
+  const handleAccordionMode = () => {
+    if (window.innerWidth < DESKTOP_BREAKPOINT) {
+      enableAccordion();
+    } else {
+      disableAccordion();
+    }
+  };
+
+  handleAccordionMode();
+
+  window.addEventListener('resize', handleAccordionMode);
 });
